@@ -1,0 +1,1509 @@
+2019/02/21 12:51:31 [INFO] Packer version: 1.0.4
+2019/02/21 12:51:31 Packer Target OS/Arch: linux amd64
+2019/02/21 12:51:31 Built with Go Version: go1.8.3
+2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 Using internal plugin for file
+2019/02/21 12:51:31 Using internal plugin for amazon-chroot
+2019/02/21 12:51:31 Using internal plugin for amazon-ebssurrogate
+2019/02/21 12:51:31 Using internal plugin for amazon-instance
+2019/02/21 12:51:31 Using internal plugin for azure-arm
+2019/02/21 12:51:31 Using internal plugin for qemu
+2019/02/21 12:51:31 Using internal plugin for virtualbox-iso
+2019/02/21 12:51:31 Using internal plugin for amazon-ebsvolume
+2019/02/21 12:51:31 Using internal plugin for docker
+2019/02/21 12:51:31 Using internal plugin for hyperv-iso
+2019/02/21 12:51:31 Using internal plugin for openstack
+2019/02/21 12:51:31 Using internal plugin for virtualbox-ovf
+2019/02/21 12:51:31 Using internal plugin for vmware-iso
+2019/02/21 12:51:31 Using internal plugin for vmware-vmx
+2019/02/21 12:51:31 Using internal plugin for alicloud-ecs
+2019/02/21 12:51:31 Using internal plugin for cloudstack
+2019/02/21 12:51:31 Using internal plugin for digitalocean
+2019/02/21 12:51:31 Using internal plugin for parallels-iso
+2019/02/21 12:51:31 Using internal plugin for amazon-ebs
+2019/02/21 12:51:31 Using internal plugin for googlecompute
+2019/02/21 12:51:31 Using internal plugin for null
+2019/02/21 12:51:31 Using internal plugin for parallels-pvm
+2019/02/21 12:51:31 Using internal plugin for windows-shell
+2019/02/21 12:51:31 Using internal plugin for shell-local
+2019/02/21 12:51:31 Using internal plugin for ansible
+2019/02/21 12:51:31 Using internal plugin for chef-solo
+2019/02/21 12:51:31 Using internal plugin for puppet-masterless
+2019/02/21 12:51:31 Using internal plugin for salt-masterless
+2019/02/21 12:51:31 Using internal plugin for windows-restart
+2019/02/21 12:51:31 Using internal plugin for converge
+2019/02/21 12:51:31 Using internal plugin for powershell
+2019/02/21 12:51:31 Using internal plugin for puppet-server
+2019/02/21 12:51:31 Using internal plugin for shell
+2019/02/21 12:51:31 Using internal plugin for ansible-local
+2019/02/21 12:51:31 Using internal plugin for chef-client
+2019/02/21 12:51:31 Using internal plugin for file
+2019/02/21 12:51:31 Using internal plugin for alicloud-import
+2019/02/21 12:51:31 Using internal plugin for compress
+2019/02/21 12:51:31 Using internal plugin for googlecompute-export
+2019/02/21 12:51:31 Using internal plugin for amazon-import
+2019/02/21 12:51:31 Using internal plugin for artifice
+2019/02/21 12:51:31 Using internal plugin for docker-save
+2019/02/21 12:51:31 Using internal plugin for manifest
+2019/02/21 12:51:31 Using internal plugin for shell-local
+2019/02/21 12:51:31 Using internal plugin for vagrant-cloud
+2019/02/21 12:51:31 Using internal plugin for vsphere
+2019/02/21 12:51:31 Using internal plugin for atlas
+2019/02/21 12:51:31 Using internal plugin for checksum
+2019/02/21 12:51:31 Using internal plugin for docker-import
+2019/02/21 12:51:31 Using internal plugin for docker-push
+2019/02/21 12:51:31 Using internal plugin for docker-tag
+2019/02/21 12:51:31 Using internal plugin for vagrant
+2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 Attempting to open config file: /home/junyi/.packerconfig
+2019/02/21 12:51:31 [WARN] Config file doesn't exist: /home/junyi/.packerconfig
+2019/02/21 12:51:31 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[virtualbox-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso docker:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker cloudstack:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack digitalocean:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean amazon-ebs:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs googlecompute:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute amazon-chroot:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot amazon-instance:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance amazon-ebsvolume:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume openstack:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack alicloud-ecs:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs parallels-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso azure-arm:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm hyperv-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso virtualbox-ovf:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf null:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null parallels-pvm:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm file:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file amazon-ebssurrogate:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate qemu:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu vmware-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso vmware-vmx:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx] PostProcessors:map[docker-save:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save shell-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local checksum:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum vagrant:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant amazon-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import vagrant-cloud:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud docker-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-tag:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag alicloud-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import docker-push:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push compress:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress googlecompute-export:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export artifice:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice manifest:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest vsphere:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere atlas:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas] Provisioners:map[windows-shell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell shell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell ansible:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible puppet-server:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server ansible-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local chef-client:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client shell-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local salt-masterless:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless powershell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell chef-solo:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo puppet-masterless:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless windows-restart:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart converge:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge file:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file]}
+2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 Setting cache directory: /home/junyi/csye6225/Assignment4/csye6225-spring2019-ami/infrastructure/aws/cloudformation/packer_cache
+2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 Loading builder: amazon-ebs
+2019/02/21 12:51:31 Plugin could not be found. Checking same directory as executable.
+2019/02/21 12:51:31 Current exe path: /usr/bin/packer
+2019/02/21 12:51:31 Creating plugin client for path: /usr/bin/packer
+2019/02/21 12:51:31 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-amazon-ebs"}
+2019/02/21 12:51:31 Waiting for RPC address for: /usr/bin/packer
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 [INFO] Packer version: 1.0.4
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Packer Target OS/Arch: linux amd64
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Built with Go Version: go1.8.3
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Attempting to open config file: /home/junyi/.packerconfig
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 [WARN] Config file doesn't exist: /home/junyi/.packerconfig
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Setting cache directory: /home/junyi/csye6225/Assignment4/csye6225-spring2019-ami/infrastructure/aws/cloudformation/packer_cache
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 args: []string{"packer-builder-amazon-ebs"}
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Plugin minimum port: 10000
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Plugin maximum port: 25000
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Plugin address: unix /tmp/packer-plugin246955043
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Waiting for connection...
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Serving a plugin connection...
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 Loading provisioner: shell
+2019/02/21 12:51:31 Plugin could not be found. Checking same directory as executable.
+2019/02/21 12:51:31 Current exe path: /usr/bin/packer
+2019/02/21 12:51:31 Creating plugin client for path: /usr/bin/packer
+2019/02/21 12:51:31 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2019/02/21 12:51:31 Waiting for RPC address for: /usr/bin/packer
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 [INFO] Packer version: 1.0.4
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Packer Target OS/Arch: linux amd64
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Built with Go Version: go1.8.3
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Attempting to open config file: /home/junyi/.packerconfig
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 [WARN] Config file doesn't exist: /home/junyi/.packerconfig
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Setting cache directory: /home/junyi/csye6225/Assignment4/csye6225-spring2019-ami/infrastructure/aws/cloudformation/packer_cache
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 args: []string{"packer-provisioner-shell"}
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Plugin minimum port: 10000
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Plugin maximum port: 25000
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Plugin address: unix /tmp/packer-plugin753321311
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Waiting for connection...
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Detected home directory from env var: /home/junyi
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Serving a plugin connection...
+2019/02/21 12:51:31 ui: Debug mode enabled. Builds will not be parallelized.
+2019/02/21 12:51:31 ui: [1;32mamazon-ebs output will be in this color.[0m
+2019/02/21 12:51:31 ui: 
+2019/02/21 12:51:31 Build debug mode: true
+2019/02/21 12:51:31 Force build: false
+2019/02/21 12:51:31 On error: 
+2019/02/21 12:51:31 Preparing build: amazon-ebs
+2019/02/21 12:51:31 packer: 2019/02/21 12:51:31 Config: {PackerConfig:{PackerBuildName:amazon-ebs PackerBuilderType:amazon-ebs PackerDebug:true PackerForce:false PackerOnError: PackerUserVars:map[ssh_username:centos aws_region:us-east-1 source_ami:ami-9887c6e7]} AccessConfig:{AccessKey: CustomEndpointEc2: ProfileName: RawRegion:us-east-1 SecretKey: SkipValidation:false Token: session:<nil>} AMIConfig:{AMIName:csye6225_1550771491 AMIDescription:CentOS AMI for CSYE 6225 - Spring 2019 AMIVirtType: AMIUsers:[] AMIGroups:[] AMIProductCodes:[] AMIRegions:[] AMISkipRegionValidation:false AMITags:map[] AMIEnhancedNetworking:false AMIForceDeregister:false AMIForceDeleteSnapshot:false AMIEncryptBootVolume:false AMIKmsKeyId: AMIRegionKMSKeyIDs:map[] SnapshotTags:map[] SnapshotUsers:[] SnapshotGroups:[]} BlockDevices:{AMIBlockDevices:{AMIMappings:[]} LaunchBlockDevices:{LaunchMappings:[{DeleteOnTermination:true DeviceName:/dev/sda1 Encrypted:false IOPS:0 NoDevice:false SnapshotId: VirtualName: VolumeType:gp2 VolumeSize:20}]}} RunConfig:{AssociatePublicIpAddress:false AvailabilityZone: EbsOptimized:false IamInstanceProfile: InstanceType:t2.micro RunTags:map[] SourceAmi:ami-9887c6e7 SourceAmiFilter:{Filters:map[] Owners:[] MostRecent:false} SpotPrice: SpotPriceAutoProduct: DisableStopInstance:false SecurityGroupId: SecurityGroupIds:[] SubnetId: TemporaryKeyPairName:packer_5c6ee523-b969-f4ac-76b9-6ae1f86ed8a9 UserData: UserDataFile: WindowsPasswordTimeout:20m0s VpcId: InstanceInitiatedShutdownBehavior:stop Comm:{Type:ssh SSHHost: SSHPort:22 SSHUsername:centos SSHPassword: SSHPrivateKey: SSHPty:false SSHTimeout:5m0s SSHAgentAuth:false SSHDisableAgent:false SSHHandshakeAttempts:10 SSHBastionHost: SSHBastionPort:0 SSHBastionAgentAuth:false SSHBastionUsername: SSHBastionPassword: SSHBastionPrivateKey: SSHFileTransferMethod:scp WinRMUser: WinRMPassword: WinRMHost: WinRMPort:0 WinRMTimeout:0s WinRMUseSSL:false WinRMInsecure:false WinRMUseNTLM:false WinRMTransportDecorator:<nil>} SSHKeyPairName: SSHPrivateIp:false} VolumeRunTags:map[] ctx:{Data:<nil> Funcs:map[clean_ami_name:0xb37e50] UserVariables:map[aws_region:us-east-1 source_ami:ami-9887c6e7 ssh_username:centos] EnableEnv:false BuildName:amazon-ebs BuildType:amazon-ebs TemplatePath:/home/junyi/csye6225/Assignment4/csye6225-spring2019-ami/infrastructure/aws/cloudformation/centos-ami-template.json}}
+2019/02/21 12:51:31 Debug enabled, so waiting for build to finish: amazon-ebs
+2019/02/21 12:51:31 Starting build run: amazon-ebs
+2019/02/21 12:51:31 Running builder: amazon-ebs
+2019/02/21 12:51:31 [INFO] (telemetry) Starting builder amazon-ebs
+2019/02/21 12:51:31 ui: [1;32m==> amazon-ebs: Prevalidating AMI Name...[0m
+2019/02/21 12:51:32 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepPreValidate'. Press enter to continue.[0m
+2019/02/21 12:51:53 packer: 2019/02/21 12:51:53 Using AMI Filters {
+2019/02/21 12:51:53 packer:   ImageIds: ["ami-9887c6e7"]
+2019/02/21 12:51:53 packer: }
+2019/02/21 12:51:53 ui: [0;32m    amazon-ebs: Found Image ID: ami-9887c6e7[0m
+2019/02/21 12:51:53 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepSourceAMIInfo'. Press enter to continue.[0m
+2019/02/21 12:51:55 ui: [1;32m==> amazon-ebs: Creating temporary keypair: packer_5c6ee523-b969-f4ac-76b9-6ae1f86ed8a9[0m
+2019/02/21 12:51:55 ui: [0;32m    amazon-ebs: Saving key for debug purposes: ec2_amazon-ebs.pem[0m
+2019/02/21 12:51:55 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepKeyPair'. Press enter to continue.[0m
+2019/02/21 12:51:56 ui: [1;32m==> amazon-ebs: Creating temporary security group for this instance: packer_5c6ee53c-6d31-9237-e9dd-c12e2ed7bfa5[0m
+2019/02/21 12:51:56 ui: [1;32m==> amazon-ebs: Authorizing access to port 22 on the temporary security group...[0m
+2019/02/21 12:51:57 packer: 2019/02/21 12:51:57 [DEBUG] Waiting for temporary security group: sg-0ca206575372be436
+2019/02/21 12:51:57 packer: 2019/02/21 12:51:57 [DEBUG] Found security group sg-0ca206575372be436
+2019/02/21 12:51:57 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepSecurityGroup'. Press enter to continue.[0m
+2019/02/21 12:51:58 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'stepCleanupVolumes'. Press enter to continue.[0m
+2019/02/21 12:51:59 ui: [1;32m==> amazon-ebs: Launching a source AWS instance...[0m
+2019/02/21 12:52:00 ui: [0;32m    amazon-ebs: Instance ID: i-05f3a126c9b596fc6[0m
+2019/02/21 12:52:00 ui: [1;32m==> amazon-ebs: Waiting for instance (i-05f3a126c9b596fc6) to become ready...[0m
+2019/02/21 12:52:00 packer: 2019/02/21 12:52:00 Waiting for state to become: running
+2019/02/21 12:52:00 packer: 2019/02/21 12:52:00 Using 2s as polling delay (change with AWS_POLL_DELAY_SECONDS)
+2019/02/21 12:52:00 packer: 2019/02/21 12:52:00 Allowing 300s to complete (change with AWS_TIMEOUT_SECONDS)
+2019/02/21 12:52:30 ui: [1;32m==> amazon-ebs: Adding tags to source instance[0m
+2019/02/21 12:52:30 ui: [0;32m    amazon-ebs: Adding tag: "Name": "Packer Builder"[0m
+2019/02/21 12:52:30 ui: [0;32m    amazon-ebs: Public DNS: ec2-3-87-53-81.compute-1.amazonaws.com[0m
+2019/02/21 12:52:30 ui: [0;32m    amazon-ebs: Public IP: 3.87.53.81[0m
+2019/02/21 12:52:30 ui: [0;32m    amazon-ebs: Private IP: 172.31.90.47[0m
+2019/02/21 12:52:30 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepRunSourceInstance'. Press enter to continue.[0m
+2019/02/21 12:52:30 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepTagEBSVolumes'. Press enter to continue.[0m
+2019/02/21 12:52:31 packer: 2019/02/21 12:52:31 [INFO] Not using winrm communicator, skipping get password...
+2019/02/21 12:52:31 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepGetPassword'. Press enter to continue.[0m
+2019/02/21 12:52:33 packer: 2019/02/21 12:52:33 [INFO] Waiting for SSH, up to timeout: 5m0s
+2019/02/21 12:52:33 ui: [1;32m==> amazon-ebs: Waiting for SSH to become available...[0m
+2019/02/21 12:52:42 packer: 2019/02/21 12:52:42 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.87.53.81:22: getsockopt: connection refused
+2019/02/21 12:52:47 packer: 2019/02/21 12:52:47 [INFO] Attempting SSH connection...
+2019/02/21 12:52:47 packer: 2019/02/21 12:52:47 reconnecting to TCP connection for SSH
+2019/02/21 12:52:47 packer: 2019/02/21 12:52:47 handshaking with SSH
+2019/02/21 12:52:47 packer: 2019/02/21 12:52:47 handshake complete!
+2019/02/21 12:52:47 packer: 2019/02/21 12:52:47 opening new ssh session
+2019/02/21 12:52:47 packer: 2019/02/21 12:52:47 [INFO] agent forwarding enabled
+2019/02/21 12:52:47 ui: [1;32m==> amazon-ebs: Connected to SSH![0m
+2019/02/21 12:52:47 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepConnect'. Press enter to continue.[0m
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 Running the provision hook
+2019/02/21 12:53:41 [INFO] (telemetry) Starting provisioner shell
+2019/02/21 12:53:41 ui: [1;32m==> amazon-ebs: Provisioning with shell script: /tmp/packer-shell085629234[0m
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 Opening /tmp/packer-shell085629234 for reading
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 [INFO] 54 bytes written for 'uploadData'
+2019/02/21 12:53:41 [INFO] 54 bytes written for 'uploadData'
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 opening new ssh session
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 Starting remote scp process:  scp -vt /tmp
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 Started SCP session, beginning transfers...
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 Copying input data into temporary file so we can read the length
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 [DEBUG] scp: Uploading script_7687.sh: perms=C0644 size=54
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 SCP session complete, closing stdin pipe.
+2019/02/21 12:53:41 packer: 2019/02/21 12:53:41 Waiting for SSH session to complete.
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 scp stderr (length 30): Sink: C0644 54 script_7687.sh
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 opening new ssh session
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 starting remote command: chmod 0755 /tmp/script_7687.sh
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 [INFO] RPC endpoint: Communicator ended with: 0
+2019/02/21 12:53:42 [INFO] RPC client: Communicator ended with: 0
+2019/02/21 12:53:42 [INFO] RPC endpoint: Communicator ended with: 0
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 [INFO] RPC client: Communicator ended with: 0
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 opening new ssh session
+2019/02/21 12:53:42 packer: 2019/02/21 12:53:42 starting remote command: chmod +x /tmp/script_7687.sh; FOO='foo' PACKER_BUILDER_TYPE='amazon-ebs' PACKER_BUILD_NAME='amazon-ebs'  /tmp/script_7687.sh
+2019/02/21 12:53:42 ui: [0;32m    amazon-ebs: Loaded plugins: fastestmirror[0m
+2019/02/21 12:53:42 ui: [0;32m    amazon-ebs: Determining fastest mirrors[0m
+2019/02/21 12:53:43 ui: [0;32m    amazon-ebs: * base: repos-va.psychz.net[0m
+2019/02/21 12:53:43 ui: [0;32m    amazon-ebs: * extras: mirror.jaleco.com[0m
+2019/02/21 12:53:43 ui: [0;32m    amazon-ebs: * updates: repos-va.psychz.net[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: Resolving Dependencies[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: --> Running transaction check[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package GeoIP.x86_64 0:1.5.0-11.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package GeoIP.x86_64 0:1.5.0-13.el7 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package audit.x86_64 0:2.8.1-3.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package audit.x86_64 0:2.8.4-4.el7 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package audit-libs.x86_64 0:2.8.1-3.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package audit-libs.x86_64 0:2.8.4-4.el7 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package audit-libs-python.x86_64 0:2.8.1-3.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package audit-libs-python.x86_64 0:2.8.4-4.el7 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package bash.x86_64 0:4.2.46-30.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package bash.x86_64 0:4.2.46-31.el7 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package bind-libs-lite.x86_64 32:9.9.4-61.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package bind-libs-lite.x86_64 32:9.9.4-73.el7_6 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package bind-license.noarch 32:9.9.4-61.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package bind-license.noarch 32:9.9.4-73.el7_6 will be an update[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package binutils.x86_64 0:2.27-27.base.el7 will be updated[0m
+2019/02/21 12:53:45 ui: [0;32m    amazon-ebs: ---> Package binutils.x86_64 0:2.27-34.base.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package centos-release.x86_64 0:7-5.1804.el7.centos.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package centos-release.x86_64 0:7-6.1810.2.el7.centos will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package checkpolicy.x86_64 0:2.5-6.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package checkpolicy.x86_64 0:2.5-8.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cloud-init.x86_64 0:0.7.9-24.el7.centos will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cloud-init.x86_64 0:18.2-1.el7.centos.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package coreutils.x86_64 0:8.22-21.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package coreutils.x86_64 0:8.22-23.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cronie.x86_64 0:1.4.11-19.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cronie.x86_64 0:1.4.11-20.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cronie-anacron.x86_64 0:1.4.11-19.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cronie-anacron.x86_64 0:1.4.11-20.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cryptsetup-libs.x86_64 0:1.7.4-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package cryptsetup-libs.x86_64 0:2.0.3-3.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: libjson-c.so.2()(64bit) for package: cryptsetup-libs-2.0.3-3.el7.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package curl.x86_64 0:7.29.0-46.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package curl.x86_64 0:7.29.0-51.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dbus.x86_64 1:1.10.24-7.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dbus.x86_64 1:1.10.24-12.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dbus-libs.x86_64 1:1.10.24-7.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dbus-libs.x86_64 1:1.10.24-12.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package device-mapper.x86_64 7:1.02.146-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package device-mapper.x86_64 7:1.02.149-10.el7_6.3 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package device-mapper-libs.x86_64 7:1.02.146-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package device-mapper-libs.x86_64 7:1.02.149-10.el7_6.3 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dmidecode.x86_64 1:3.0-5.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dmidecode.x86_64 1:3.1-2.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut.x86_64 0:033-535.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut.x86_64 0:033-554.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut-config-generic.x86_64 0:033-535.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut-config-generic.x86_64 0:033-554.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut-config-rescue.x86_64 0:033-535.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut-config-rescue.x86_64 0:033-554.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut-network.x86_64 0:033-535.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package dracut-network.x86_64 0:033-554.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package e2fsprogs.x86_64 0:1.42.9-12.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package e2fsprogs.x86_64 0:1.42.9-13.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package e2fsprogs-libs.x86_64 0:1.42.9-12.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package e2fsprogs-libs.x86_64 0:1.42.9-13.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package elfutils-default-yama-scope.noarch 0:0.170-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package elfutils-default-yama-scope.noarch 0:0.172-2.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package elfutils-libelf.x86_64 0:0.170-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package elfutils-libelf.x86_64 0:0.172-2.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package elfutils-libs.x86_64 0:0.170-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package elfutils-libs.x86_64 0:0.172-2.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package ethtool.x86_64 2:4.8-7.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package ethtool.x86_64 2:4.8-9.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package file.x86_64 0:5.11-33.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package file.x86_64 0:5.11-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package file-libs.x86_64 0:5.11-33.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package file-libs.x86_64 0:5.11-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package findutils.x86_64 1:4.5.11-5.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package findutils.x86_64 1:4.5.11-6.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package freetype.x86_64 0:2.4.11-15.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package freetype.x86_64 0:2.8-12.el7_6.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: libpng15.so.15(PNG15_0)(64bit) for package: freetype-2.8-12.el7_6.1.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: libpng15.so.15()(64bit) for package: freetype-2.8-12.el7_6.1.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package glib2.x86_64 0:2.54.2-2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package glib2.x86_64 0:2.56.1-2.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package glibc.x86_64 0:2.17-222.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package glibc.x86_64 0:2.17-260.el7_6.3 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package glibc-common.x86_64 0:2.17-222.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package glibc-common.x86_64 0:2.17-260.el7_6.3 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package gnupg2.x86_64 0:2.0.22-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package gnupg2.x86_64 0:2.0.22-5.el7_5 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package gobject-introspection.x86_64 0:1.50.0-1.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package gobject-introspection.x86_64 0:1.56.1-1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2.x86_64 1:2.02-0.65.el7.centos.2 will be obsoleted[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-common.noarch 1:2.02-0.65.el7.centos.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-common.noarch 1:2.02-0.76.el7.centos.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-pc.x86_64 1:2.02-0.65.el7.centos.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-pc.x86_64 1:2.02-0.76.el7.centos.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-pc-modules.noarch 1:2.02-0.65.el7.centos.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-pc-modules.noarch 1:2.02-0.76.el7.centos.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-tools.x86_64 1:2.02-0.65.el7.centos.2 will be obsoleted[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-tools.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-tools-extra.x86_64 1:2.02-0.65.el7.centos.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-tools-extra.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-tools-minimal.x86_64 1:2.02-0.65.el7.centos.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grub2-tools-minimal.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grubby.x86_64 0:8.28-23.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package grubby.x86_64 0:8.28-25.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package gssproxy.x86_64 0:0.7.0-17.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package gssproxy.x86_64 0:0.7.0-21.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package hwdata.x86_64 0:0.252-8.8.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package hwdata.x86_64 0:0.252-9.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package initscripts.x86_64 0:9.49.41-1.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package initscripts.x86_64 0:9.49.46-1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package iptables.x86_64 0:1.4.21-24.1.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package iptables.x86_64 0:1.4.21-28.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package iwl7265-firmware.noarch 0:22.0.7.0-62.1.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package iwl7265-firmware.noarch 0:22.0.7.0-69.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kbd.x86_64 0:1.15.5-13.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kbd.x86_64 0:1.15.5-15.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kbd-legacy.noarch 0:1.15.5-13.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kbd-legacy.noarch 0:1.15.5-15.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kbd-misc.noarch 0:1.15.5-13.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kbd-misc.noarch 0:1.15.5-15.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kernel.x86_64 0:3.10.0-957.5.1.el7 will be installed[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: linux-firmware >= 20180911-68 for package: kernel-3.10.0-957.5.1.el7.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kernel-tools.x86_64 0:3.10.0-862.3.2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kernel-tools.x86_64 0:3.10.0-957.5.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kernel-tools-libs.x86_64 0:3.10.0-862.3.2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kernel-tools-libs.x86_64 0:3.10.0-957.5.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kexec-tools.x86_64 0:2.0.15-13.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kexec-tools.x86_64 0:2.0.15-21.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kmod.x86_64 0:20-21.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kmod.x86_64 0:20-23.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kmod-libs.x86_64 0:20-21.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kmod-libs.x86_64 0:20-23.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kpartx.x86_64 0:0.4.9-119.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package kpartx.x86_64 0:0.4.9-123.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package krb5-libs.x86_64 0:1.15.1-19.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package krb5-libs.x86_64 0:1.15.1-37.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libbasicobjects.x86_64 0:0.1.1-29.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libbasicobjects.x86_64 0:0.1.1-32.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libblkid.x86_64 0:2.23.2-52.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libblkid.x86_64 0:2.23.2-59.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcgroup.x86_64 0:0.41-15.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcgroup.x86_64 0:0.41-20.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcollection.x86_64 0:0.7.0-29.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcollection.x86_64 0:0.7.0-32.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcom_err.x86_64 0:1.42.9-12.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcom_err.x86_64 0:1.42.9-13.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcroco.x86_64 0:0.6.11-1.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcroco.x86_64 0:0.6.12-4.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcurl.x86_64 0:7.29.0-46.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libcurl.x86_64 0:7.29.0-51.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libfastjson.x86_64 0:0.99.4-2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libfastjson.x86_64 0:0.99.4-3.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libgcc.x86_64 0:4.8.5-28.el7_5.1 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libgcc.x86_64 0:4.8.5-36.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libgomp.x86_64 0:4.8.5-28.el7_5.1 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libgomp.x86_64 0:4.8.5-36.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libini_config.x86_64 0:1.3.1-29.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libini_config.x86_64 0:1.3.1-32.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libmount.x86_64 0:2.23.2-52.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libmount.x86_64 0:2.23.2-59.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libpath_utils.x86_64 0:0.2.1-29.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libpath_utils.x86_64 0:0.2.1-32.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libref_array.x86_64 0:0.1.5-29.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libref_array.x86_64 0:0.1.5-32.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libselinux.x86_64 0:2.5-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libselinux.x86_64 0:2.5-14.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libselinux-python.x86_64 0:2.5-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libselinux-python.x86_64 0:2.5-14.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libselinux-utils.x86_64 0:2.5-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libselinux-utils.x86_64 0:2.5-14.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libsemanage.x86_64 0:2.5-11.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libsemanage.x86_64 0:2.5-14.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libsemanage-python.x86_64 0:2.5-11.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libsemanage-python.x86_64 0:2.5-14.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libsepol.x86_64 0:2.5-8.1.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libsepol.x86_64 0:2.5-10.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libss.x86_64 0:1.42.9-12.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libss.x86_64 0:1.42.9-13.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libssh2.x86_64 0:1.4.3-10.el7_2.1 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libssh2.x86_64 0:1.4.3-12.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libstdc++.x86_64 0:4.8.5-28.el7_5.1 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libstdc++.x86_64 0:4.8.5-36.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libteam.x86_64 0:1.27-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libteam.x86_64 0:1.27-5.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libtirpc.x86_64 0:0.2.4-0.10.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libtirpc.x86_64 0:0.2.4-0.15.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libuuid.x86_64 0:2.23.2-52.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package libuuid.x86_64 0:2.23.2-59.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package logrotate.x86_64 0:3.8.6-15.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package logrotate.x86_64 0:3.8.6-17.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package man-db.x86_64 0:2.6.3-9.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package man-db.x86_64 0:2.6.3-11.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.56-2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.60-1.el7_5 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package microcode_ctl.x86_64 2:2.1-29.2.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package microcode_ctl.x86_64 2:2.1-47.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package net-tools.x86_64 0:2.0-0.22.20131004git.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package net-tools.x86_64 0:2.0-0.24.20131004git.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nfs-utils.x86_64 1:1.3.0-0.54.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nfs-utils.x86_64 1:1.3.0-0.61.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss.x86_64 0:3.36.0-5.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss.x86_64 0:3.36.0-7.1.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-pem.x86_64 0:1.0.3-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-pem.x86_64 0:1.0.3-5.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-sysinit.x86_64 0:3.36.0-5.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-sysinit.x86_64 0:3.36.0-7.1.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-tools.x86_64 0:3.36.0-5.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-tools.x86_64 0:3.36.0-7.1.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-util.x86_64 0:3.36.0-1.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package nss-util.x86_64 0:3.36.0-1.1.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package openldap.x86_64 0:2.4.44-15.el7_5 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package openldap.x86_64 0:2.4.44-21.el7_6 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package openssl.x86_64 1:1.0.2k-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package openssl.x86_64 1:1.0.2k-16.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package openssl-libs.x86_64 1:1.0.2k-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package openssl-libs.x86_64 1:1.0.2k-16.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package policycoreutils.x86_64 0:2.5-22.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package policycoreutils.x86_64 0:2.5-29.el7_6.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package policycoreutils-python.x86_64 0:2.5-22.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package policycoreutils-python.x86_64 0:2.5-29.el7_6.1 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package polkit.x86_64 0:0.112-14.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package polkit.x86_64 0:0.112-18.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package postfix.x86_64 2:2.10.1-6.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package postfix.x86_64 2:2.10.1-7.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package procps-ng.x86_64 0:3.3.10-17.el7_5.2 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package procps-ng.x86_64 0:3.3.10-23.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python.x86_64 0:2.7.5-68.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python.x86_64 0:2.7.5-76.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-libs.x86_64 0:2.7.5-68.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-libs.x86_64 0:2.7.5-76.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-linux-procfs.noarch 0:0.4.9-3.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-linux-procfs.noarch 0:0.4.9-4.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-perf.x86_64 0:3.10.0-862.3.2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-perf.x86_64 0:3.10.0-957.5.1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-urlgrabber.noarch 0:3.10-8.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package python-urlgrabber.noarch 0:3.10-9.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package qemu-guest-agent.x86_64 10:2.8.0-2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package qemu-guest-agent.x86_64 10:2.12.0-2.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpcbind.x86_64 0:0.2.0-44.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpcbind.x86_64 0:0.2.0-47.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm.x86_64 0:4.11.3-32.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm.x86_64 0:4.11.3-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm-build-libs.x86_64 0:4.11.3-32.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm-build-libs.x86_64 0:4.11.3-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm-libs.x86_64 0:4.11.3-32.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm-libs.x86_64 0:4.11.3-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm-python.x86_64 0:4.11.3-32.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rpm-python.x86_64 0:4.11.3-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rsyslog.x86_64 0:8.24.0-16.el7_5.4 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package rsyslog.x86_64 0:8.24.0-34.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package selinux-policy.noarch 0:3.13.1-192.el7_5.3 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package selinux-policy.noarch 0:3.13.1-229.el7_6.9 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package selinux-policy-targeted.noarch 0:3.13.1-192.el7_5.3 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.9 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package setools-libs.x86_64 0:3.3.8-2.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package setools-libs.x86_64 0:3.3.8-4.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package setup.noarch 0:2.8.71-9.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package setup.noarch 0:2.8.71-10.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package sg3_utils.x86_64 0:1.37-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package sg3_utils.x86_64 0:1.37-17.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package sg3_utils-libs.x86_64 0:1.37-12.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package sg3_utils-libs.x86_64 0:1.37-17.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package shadow-utils.x86_64 2:4.1.5.1-24.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package shadow-utils.x86_64 2:4.1.5.1-25.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package sudo.x86_64 0:1.8.19p2-13.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package sudo.x86_64 0:1.8.23-3.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package systemd.x86_64 0:219-57.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package systemd.x86_64 0:219-62.el7_6.5 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package systemd-libs.x86_64 0:219-57.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package systemd-libs.x86_64 0:219-62.el7_6.5 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package systemd-sysv.x86_64 0:219-57.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package systemd-sysv.x86_64 0:219-62.el7_6.5 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package tar.x86_64 2:1.26-34.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package tar.x86_64 2:1.26-35.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package teamd.x86_64 0:1.27-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package teamd.x86_64 0:1.27-5.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package tuned.noarch 0:2.9.0-1.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package tuned.noarch 0:2.10.0-6.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package tzdata.noarch 0:2018e-3.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package tzdata.noarch 0:2018i-1.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package util-linux.x86_64 0:2.23.2-52.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package util-linux.x86_64 0:2.23.2-59.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: libsmartcols = 2.23.2-59.el7 for package: util-linux-2.23.2-59.el7.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: libsmartcols.so.1(SMARTCOLS_2.25)(64bit) for package: util-linux-2.23.2-59.el7.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Processing Dependency: libsmartcols.so.1()(64bit) for package: util-linux-2.23.2-59.el7.x86_64[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package vim-minimal.x86_64 2:7.4.160-4.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package vim-minimal.x86_64 2:7.4.160-5.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package wpa_supplicant.x86_64 1:2.6-9.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package wpa_supplicant.x86_64 1:2.6-12.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package xfsprogs.x86_64 0:4.5.0-15.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package xfsprogs.x86_64 0:4.5.0-18.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package yum.noarch 0:3.4.3-158.el7.centos will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package yum.noarch 0:3.4.3-161.el7.centos will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package yum-plugin-fastestmirror.noarch 0:1.1.31-45.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package yum-plugin-fastestmirror.noarch 0:1.1.31-50.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package yum-utils.noarch 0:1.1.31-45.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package yum-utils.noarch 0:1.1.31-50.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package zlib.x86_64 0:1.2.7-17.el7 will be updated[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package zlib.x86_64 0:1.2.7-18.el7 will be an update[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: --> Running transaction check[0m
+2019/02/21 12:53:46 ui: [0;32m    amazon-ebs: ---> Package json-c.x86_64 0:0.11-4.el7_0 will be installed[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ---> Package libpng.x86_64 2:1.5.13-7.el7_2 will be installed[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ---> Package libsmartcols.x86_64 0:2.23.2-59.el7 will be installed[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ---> Package linux-firmware.noarch 0:20180911-69.git85c5d90.el7 will be installed[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: --> Finished Dependency Resolution[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Dependencies Resolved[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ================================================================================[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Package                     Arch   Version                       Repository[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Size[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ================================================================================[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Installing:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2                       x86_64 1:2.02-0.76.el7.centos.1      updates  31 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: replacing  grub2.x86_64 1:2.02-0.65.el7.centos.2[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2-tools                 x86_64 1:2.02-0.76.el7.centos.1      updates 1.8 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2-tools-extra           x86_64 1:2.02-0.76.el7.centos.1      updates 995 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2-tools-minimal         x86_64 1:2.02-0.76.el7.centos.1      updates 172 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kernel                      x86_64 3.10.0-957.5.1.el7            updates  48 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Updating:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: GeoIP                       x86_64 1.5.0-13.el7                  base    1.5 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: audit                       x86_64 2.8.4-4.el7                   base    250 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: audit-libs                  x86_64 2.8.4-4.el7                   base    100 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: audit-libs-python           x86_64 2.8.4-4.el7                   base     76 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: bash                        x86_64 4.2.46-31.el7                 base    1.0 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: bind-libs-lite              x86_64 32:9.9.4-73.el7_6             updates 741 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: bind-license                noarch 32:9.9.4-73.el7_6             updates  87 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: binutils                    x86_64 2.27-34.base.el7              base    5.9 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: centos-release              x86_64 7-6.1810.2.el7.centos         base     26 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: checkpolicy                 x86_64 2.5-8.el7                     base    295 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: cloud-init                  x86_64 18.2-1.el7.centos.1           updates 778 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: coreutils                   x86_64 8.22-23.el7                   base    3.3 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: cronie                      x86_64 1.4.11-20.el7_6               updates  91 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: cronie-anacron              x86_64 1.4.11-20.el7_6               updates  36 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: cryptsetup-libs             x86_64 2.0.3-3.el7                   base    338 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: curl                        x86_64 7.29.0-51.el7                 base    269 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dbus                        x86_64 1:1.10.24-12.el7              base    245 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dbus-libs                   x86_64 1:1.10.24-12.el7              base    169 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: device-mapper               x86_64 7:1.02.149-10.el7_6.3         updates 292 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: device-mapper-libs          x86_64 7:1.02.149-10.el7_6.3         updates 320 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dmidecode                   x86_64 1:3.1-2.el7                   base     78 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dracut                      x86_64 033-554.el7                   base    327 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dracut-config-generic       x86_64 033-554.el7                   base     58 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dracut-config-rescue        x86_64 033-554.el7                   base     59 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: dracut-network              x86_64 033-554.el7                   base    102 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: e2fsprogs                   x86_64 1.42.9-13.el7                 base    699 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: e2fsprogs-libs              x86_64 1.42.9-13.el7                 base    167 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: elfutils-default-yama-scope noarch 0.172-2.el7                   base     32 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: elfutils-libelf             x86_64 0.172-2.el7                   base    194 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: elfutils-libs               x86_64 0.172-2.el7                   base    285 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ethtool                     x86_64 2:4.8-9.el7                   base    127 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: file                        x86_64 5.11-35.el7                   base     57 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: file-libs                   x86_64 5.11-35.el7                   base    340 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: findutils                   x86_64 1:4.5.11-6.el7                base    559 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: freetype                    x86_64 2.8-12.el7_6.1                updates 380 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: glib2                       x86_64 2.56.1-2.el7                  base    2.5 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: glibc                       x86_64 2.17-260.el7_6.3              updates 3.7 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: warning: /var/cache/yum/x86_64/7/base/packages/audit-2.8.4-4.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: glibc-common                x86_64 2.17-260.el7_6.3              updates  12 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: gnupg2                      x86_64 2.0.22-5.el7_5                base    1.5 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: gobject-introspection       x86_64 1.56.1-1.el7                  base    241 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2-common                noarch 1:2.02-0.76.el7.centos.1      updates 728 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2-pc                    x86_64 1:2.02-0.76.el7.centos.1      updates  31 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grub2-pc-modules            noarch 1:2.02-0.76.el7.centos.1      updates 846 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: grubby                      x86_64 8.28-25.el7                   base     70 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: gssproxy                    x86_64 0.7.0-21.el7                  base    109 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: hwdata                      x86_64 0.252-9.1.el7                 base    2.3 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: initscripts                 x86_64 9.49.46-1.el7                 base    439 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: iptables                    x86_64 1.4.21-28.el7                 base    433 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: iwl7265-firmware            noarch 22.0.7.0-69.el7               base    6.4 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kbd                         x86_64 1.15.5-15.el7                 base    348 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kbd-legacy                  noarch 1.15.5-15.el7                 base    466 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kbd-misc                    noarch 1.15.5-15.el7                 base    1.4 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kernel-tools                x86_64 3.10.0-957.5.1.el7            updates 7.1 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kernel-tools-libs           x86_64 3.10.0-957.5.1.el7            updates 7.0 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kexec-tools                 x86_64 2.0.15-21.el7                 base    343 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kmod                        x86_64 20-23.el7                     base    121 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kmod-libs                   x86_64 20-23.el7                     base     50 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: kpartx                      x86_64 0.4.9-123.el7                 base     77 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: krb5-libs                   x86_64 1.15.1-37.el7_6               updates 803 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libbasicobjects             x86_64 0.1.1-32.el7                  base     26 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libblkid                    x86_64 2.23.2-59.el7                 base    181 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libcgroup                   x86_64 0.41-20.el7                   base     66 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libcollection               x86_64 0.7.0-32.el7                  base     42 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libcom_err                  x86_64 1.42.9-13.el7                 base     41 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libcroco                    x86_64 0.6.12-4.el7                  base    105 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libcurl                     x86_64 7.29.0-51.el7                 base    221 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libfastjson                 x86_64 0.99.4-3.el7                  base     27 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libgcc                      x86_64 4.8.5-36.el7                  base    102 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libgomp                     x86_64 4.8.5-36.el7                  base    157 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libini_config               x86_64 1.3.1-32.el7                  base     64 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libmount                    x86_64 2.23.2-59.el7                 base    182 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libpath_utils               x86_64 0.2.1-32.el7                  base     28 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libref_array                x86_64 0.1.5-32.el7                  base     27 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libselinux                  x86_64 2.5-14.1.el7                  base    162 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libselinux-python           x86_64 2.5-14.1.el7                  base    235 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libselinux-utils            x86_64 2.5-14.1.el7                  base    151 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libsemanage                 x86_64 2.5-14.el7                    base    151 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libsemanage-python          x86_64 2.5-14.el7                    base    113 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libsepol                    x86_64 2.5-10.el7                    base    297 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libss                       x86_64 1.42.9-13.el7                 base     46 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libssh2                     x86_64 1.4.3-12.el7                  base    134 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libstdc++                   x86_64 4.8.5-36.el7                  base    304 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libteam                     x86_64 1.27-5.el7                    base     48 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libtirpc                    x86_64 0.2.4-0.15.el7                base     89 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libuuid                     x86_64 2.23.2-59.el7                 base     82 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: logrotate                   x86_64 3.8.6-17.el7                  base     70 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: man-db                      x86_64 2.6.3-11.el7                  base    832 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: mariadb-libs                x86_64 1:5.5.60-1.el7_5              base    758 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: microcode_ctl               x86_64 2:2.1-47.el7                  base    1.4 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: net-tools                   x86_64 2.0-0.24.20131004git.el7      base    306 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: nfs-utils                   x86_64 1:1.3.0-0.61.el7              base    410 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: nss                         x86_64 3.36.0-7.1.el7_6              updates 835 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: nss-pem                     x86_64 1.0.3-5.el7                   base     74 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: nss-sysinit                 x86_64 3.36.0-7.1.el7_6              updates  62 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: nss-tools                   x86_64 3.36.0-7.1.el7_6              updates 515 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: nss-util                    x86_64 3.36.0-1.1.el7_6              updates  78 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: openldap                    x86_64 2.4.44-21.el7_6               updates 356 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: openssl                     x86_64 1:1.0.2k-16.el7               base    493 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: openssl-libs                x86_64 1:1.0.2k-16.el7               base    1.2 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: policycoreutils             x86_64 2.5-29.el7_6.1                updates 916 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: policycoreutils-python      x86_64 2.5-29.el7_6.1                updates 456 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: polkit                      x86_64 0.112-18.el7                  base    168 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: postfix                     x86_64 2:2.10.1-7.el7                base    2.4 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: procps-ng                   x86_64 3.3.10-23.el7                 base    291 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: python                      x86_64 2.7.5-76.el7                  base     94 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: python-libs                 x86_64 2.7.5-76.el7                  base    5.6 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: python-linux-procfs         noarch 0.4.9-4.el7                   base     33 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: python-perf                 x86_64 3.10.0-957.5.1.el7            updates 7.1 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: python-urlgrabber           noarch 3.10-9.el7                    base    108 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: qemu-guest-agent            x86_64 10:2.12.0-2.el7               base    115 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: rpcbind                     x86_64 0.2.0-47.el7                  base     60 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: rpm                         x86_64 4.11.3-35.el7                 base    1.2 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: rpm-build-libs              x86_64 4.11.3-35.el7                 base    106 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: rpm-libs                    x86_64 4.11.3-35.el7                 base    277 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: rpm-python                  x86_64 4.11.3-35.el7                 base     83 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: rsyslog                     x86_64 8.24.0-34.el7                 base    614 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: selinux-policy              noarch 3.13.1-229.el7_6.9            updates 483 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: selinux-policy-targeted     noarch 3.13.1-229.el7_6.9            updates 6.9 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: setools-libs                x86_64 3.3.8-4.el7                   base    620 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: setup                       noarch 2.8.71-10.el7                 base    166 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: sg3_utils                   x86_64 1.37-17.el7                   base    646 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: sg3_utils-libs              x86_64 1.37-17.el7                   base     65 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: shadow-utils                x86_64 2:4.1.5.1-25.el7              base    1.1 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: sudo                        x86_64 1.8.23-3.el7                  base    841 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: systemd                     x86_64 219-62.el7_6.5                updates 5.1 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: systemd-libs                x86_64 219-62.el7_6.5                updates 407 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: systemd-sysv                x86_64 219-62.el7_6.5                updates  84 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: tar                         x86_64 2:1.26-35.el7                 base    846 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: teamd                       x86_64 1.27-5.el7                    base    112 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: tuned                       noarch 2.10.0-6.el7                  base    254 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: tzdata                      noarch 2018i-1.el7                   updates 490 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: util-linux                  x86_64 2.23.2-59.el7                 base    2.0 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: vim-minimal                 x86_64 2:7.4.160-5.el7               base    437 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: wpa_supplicant              x86_64 1:2.6-12.el7                  base    1.2 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: xfsprogs                    x86_64 4.5.0-18.el7                  base    897 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: yum                         noarch 3.4.3-161.el7.centos          base    1.2 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: yum-plugin-fastestmirror    noarch 1.1.31-50.el7                 base     34 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: yum-utils                   noarch 1.1.31-50.el7                 base    121 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: zlib                        x86_64 1.2.7-18.el7                  base     90 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Installing for dependencies:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: json-c                      x86_64 0.11-4.el7_0                  base     31 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libpng                      x86_64 2:1.5.13-7.el7_2              base    213 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: libsmartcols                x86_64 2.23.2-59.el7                 base    140 k[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: linux-firmware              noarch 20180911-69.git85c5d90.el7    base     49 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Transaction Summary[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: ================================================================================[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Install    5 Packages (+4 Dependent packages)[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Upgrade  139 Packages[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Total download size: 221 M[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Downloading packages:[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Public key for audit-2.8.4-4.el7.x86_64.rpm is not installed[0m
+2019/02/21 12:53:47 ui: [0;32m    amazon-ebs: Public key for bind-license-9.9.4-73.el7_6.noarch.rpm is not installed[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: --------------------------------------------------------------------------------[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Importing GPG key 0xF4A80EB5:[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Total                                               36 MB/s | 221 MB  00:06[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Package    : centos-release-7-5.1804.el7.centos.2.x86_64 (installed)[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7[0m
+2019/02/21 12:53:53 ui: [0;32m    amazon-ebs: Running transaction check[0m
+2019/02/21 12:53:54 ui: [0;32m    amazon-ebs: Running transaction test[0m
+2019/02/21 12:53:55 ui: [0;32m    amazon-ebs: Transaction test succeeded[0m
+2019/02/21 12:53:55 ui: [0;32m    amazon-ebs: Running transaction[0m
+2019/02/21 12:53:56 ui: [0;32m    amazon-ebs: Updating   : libgcc-4.8.5-36.el7.x86_64                                 1/291[0m
+2019/02/21 12:53:56 ui: [0;32m    amazon-ebs: Updating   : 1:grub2-common-2.02-0.76.el7.centos.1.noarch               2/291[0m
+2019/02/21 12:53:56 ui: [0;32m    amazon-ebs: Updating   : 1:grub2-pc-modules-2.02-0.76.el7.centos.1.noarch           3/291[0m
+2019/02/21 12:53:56 ui: [0;32m    amazon-ebs: Updating   : 32:bind-license-9.9.4-73.el7_6.noarch                      4/291[0m
+2019/02/21 12:53:57 ui: [0;32m    amazon-ebs: Updating   : kbd-legacy-1.15.5-15.el7.noarch                            5/291[0m
+2019/02/21 12:54:00 ui: [0;32m    amazon-ebs: Updating   : tzdata-2018i-1.el7.noarch                                  6/291[0m
+2019/02/21 12:54:03 ui: [0;32m    amazon-ebs: Updating   : glibc-common-2.17-260.el7_6.3.x86_64                       7/291[0m
+2019/02/21 12:54:03 ui: [0;32m    amazon-ebs: Updating   : glibc-2.17-260.el7_6.3.x86_64                              8/291[0m
+2019/02/21 12:54:03 ui: [0;32m    amazon-ebs: Updating   : bash-4.2.46-31.el7.x86_64                                  9/291[0m
+2019/02/21 12:54:04 ui: [0;32m    amazon-ebs: Updating   : libsepol-2.5-10.el7.x86_64                                10/291[0m
+2019/02/21 12:54:04 ui: [0;32m    amazon-ebs: Updating   : libselinux-2.5-14.1.el7.x86_64                            11/291[0m
+2019/02/21 12:54:04 ui: [0;32m    amazon-ebs: Updating   : zlib-1.2.7-18.el7.x86_64                                  12/291[0m
+2019/02/21 12:54:04 ui: [0;32m    amazon-ebs: Updating   : audit-libs-2.8.4-4.el7.x86_64                             13/291[0m
+2019/02/21 12:54:04 ui: [0;32m    amazon-ebs: Updating   : libcom_err-1.42.9-13.el7.x86_64                           14/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : 1:openssl-libs-1.0.2k-16.el7.x86_64                       15/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : coreutils-8.22-23.el7.x86_64                              16/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : krb5-libs-1.15.1-37.el7_6.x86_64                          17/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : elfutils-libelf-0.172-2.el7.x86_64                        18/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : libuuid-2.23.2-59.el7.x86_64                              19/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : libblkid-2.23.2-59.el7.x86_64                             20/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : nss-util-3.36.0-1.1.el7_6.x86_64                          21/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : nss-pem-1.0.3-5.el7.x86_64                                22/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : nss-3.36.0-7.1.el7_6.x86_64                               23/291[0m
+2019/02/21 12:54:05 ui: [0;32m    amazon-ebs: Updating   : nss-sysinit-3.36.0-7.1.el7_6.x86_64                       24/291[0m
+2019/02/21 12:54:06 ui: [0;32m    amazon-ebs: Updating   : centos-release-7-6.1810.2.el7.centos.x86_64               25/291[0m
+2019/02/21 12:54:06 ui: [0;32m    amazon-ebs: Updating   : libmount-2.23.2-59.el7.x86_64                             26/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : glib2-2.56.1-2.el7.x86_64                                 27/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : python-libs-2.7.5-76.el7.x86_64                           28/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : python-2.7.5-76.el7.x86_64                                29/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : libsemanage-2.5-14.el7.x86_64                             30/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : file-libs-5.11-35.el7.x86_64                              31/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : file-5.11-35.el7.x86_64                                   32/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : 1:findutils-4.5.11-6.el7.x86_64                           33/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : libstdc++-4.8.5-36.el7.x86_64                             34/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : libselinux-python-2.5-14.1.el7.x86_64                     35/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: Updating   : setup-2.8.71-10.el7.noarch                                36/291[0m
+2019/02/21 12:54:08 ui: [0;32m    amazon-ebs: warning: /etc/shadow created as /etc/shadow.rpmnew[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : 2:shadow-utils-4.1.5.1-25.el7.x86_64                      37/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : libtirpc-0.2.4-0.15.el7.x86_64                            38/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : libbasicobjects-0.1.1-32.el7.x86_64                       39/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : libref_array-0.1.5-32.el7.x86_64                          40/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : 2:ethtool-4.8-9.el7.x86_64                                41/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : libcollection-0.7.0-32.el7.x86_64                         42/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                      43/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : setools-libs-3.3.8-4.el7.x86_64                           44/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : libsemanage-python-2.5-14.el7.x86_64                      45/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : audit-libs-python-2.8.4-4.el7.x86_64                      46/291[0m
+2019/02/21 12:54:09 ui: [0;32m    amazon-ebs: Updating   : python-linux-procfs-0.4.9-4.el7.noarch                    47/291[0m
+2019/02/21 12:54:10 ui: [0;32m    amazon-ebs: Updating   : python-urlgrabber-3.10-9.el7.noarch                       48/291[0m
+2019/02/21 12:54:10 ui: [0;32m    amazon-ebs: Updating   : python-perf-3.10.0-957.5.1.el7.x86_64                     49/291[0m
+2019/02/21 12:54:10 ui: [0;32m    amazon-ebs: Updating   : grubby-8.28-25.el7.x86_64                                 50/291[0m
+2019/02/21 12:54:10 ui: [0;32m    amazon-ebs: Updating   : nss-tools-3.36.0-7.1.el7_6.x86_64                         51/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : logrotate-3.8.6-17.el7.x86_64                             52/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : binutils-2.27-34.base.el7.x86_64                          53/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : libssh2-1.4.3-12.el7.x86_64                               54/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : libcurl-7.29.0-51.el7.x86_64                              55/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : curl-7.29.0-51.el7.x86_64                                 56/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : rpm-libs-4.11.3-35.el7.x86_64                             57/291[0m
+2019/02/21 12:54:11 ui: [0;32m    amazon-ebs: Updating   : rpm-4.11.3-35.el7.x86_64                                  58/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : openldap-2.4.44-21.el7_6.x86_64                           59/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : gnupg2-2.0.22-5.el7_5.x86_64                              60/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : rpm-build-libs-4.11.3-35.el7.x86_64                       61/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : rpm-python-4.11.3-35.el7.x86_64                           62/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : yum-plugin-fastestmirror-1.1.31-50.el7.noarch             63/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : yum-3.4.3-161.el7.centos.noarch                           64/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : e2fsprogs-libs-1.42.9-13.el7.x86_64                       65/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : libss-1.42.9-13.el7.x86_64                                66/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : e2fsprogs-1.42.9-13.el7.x86_64                            67/291[0m
+2019/02/21 12:54:12 ui: [0;32m    amazon-ebs: Updating   : GeoIP-1.5.0-13.el7.x86_64                                 68/291[0m
+2019/02/21 12:54:13 ui: [0;32m    amazon-ebs: Installing : 2:libpng-1.5.13-7.el7_2.x86_64                            69/291[0m
+2019/02/21 12:54:13 ui: [0;32m    amazon-ebs: Updating   : freetype-2.8-12.el7_6.1.x86_64                            70/291[0m
+2019/02/21 12:54:13 ui: [0;32m    amazon-ebs: Updating   : kmod-libs-20-23.el7.x86_64                                71/291[0m
+2019/02/21 12:54:13 ui: [0;32m    amazon-ebs: Updating   : libselinux-utils-2.5-14.1.el7.x86_64                      72/291[0m
+2019/02/21 12:54:13 ui: [0;32m    amazon-ebs: Updating   : 2:tar-1.26-35.el7.x86_64                                  73/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : 2:vim-minimal-7.4.160-5.el7.x86_64                        74/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Installing : linux-firmware-20180911-69.git85c5d90.el7.noarch          75/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Installing : libsmartcols-2.23.2-59.el7.x86_64                         76/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : libpath_utils-0.2.1-32.el7.x86_64                         77/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : libini_config-1.3.1-32.el7.x86_64                         78/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : libfastjson-0.99.4-3.el7.x86_64                           79/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : 1:dmidecode-3.1-2.el7.x86_64                              80/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : sg3_utils-libs-1.37-17.el7.x86_64                         81/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : libteam-1.27-5.el7.x86_64                                 82/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Installing : json-c-0.11-4.el7_0.x86_64                                83/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : procps-ng-3.3.10-23.el7.x86_64                            84/291[0m
+2019/02/21 12:54:20 ui: [0;32m    amazon-ebs: Updating   : kpartx-0.4.9-123.el7.x86_64                               85/291[0m
+2019/02/21 12:54:21 ui: [0;32m    amazon-ebs: Updating   : 7:device-mapper-1.02.149-10.el7_6.3.x86_64                86/291[0m
+2019/02/21 12:54:21 ui: [0;32m    amazon-ebs: Updating   : util-linux-2.23.2-59.el7.x86_64                           87/291[0m
+2019/02/21 12:54:21 ui: [0;32m    amazon-ebs: Updating   : dracut-033-554.el7.x86_64                                 88/291[0m
+2019/02/21 12:54:21 ui: [0;32m    amazon-ebs: Updating   : kmod-20-23.el7.x86_64                                     89/291[0m
+2019/02/21 12:54:21 ui: [0;32m    amazon-ebs: Updating   : 7:device-mapper-libs-1.02.149-10.el7_6.3.x86_64           90/291[0m
+2019/02/21 12:54:21 ui: [0;32m    amazon-ebs: Updating   : cryptsetup-libs-2.0.3-3.el7.x86_64                        91/291[0m
+2019/02/21 12:54:22 ui: [0;32m    amazon-ebs: Updating   : elfutils-libs-0.172-2.el7.x86_64                          92/291[0m
+2019/02/21 12:54:22 ui: [0;32m    amazon-ebs: Updating   : systemd-libs-219-62.el7_6.5.x86_64                        93/291[0m
+2019/02/21 12:54:23 ui: [0;32m    amazon-ebs: Updating   : 1:dbus-libs-1.10.24-12.el7.x86_64                         94/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Updating   : systemd-219-62.el7_6.5.x86_64                             95/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Updating   : 1:dbus-1.10.24-12.el7.x86_64                              96/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Updating   : elfutils-default-yama-scope-0.172-2.el7.noarch            97/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Updating   : systemd-sysv-219-62.el7_6.5.x86_64                        98/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Installing : 1:grub2-tools-minimal-2.02-0.76.el7.centos.1.x86_64       99/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Updating   : policycoreutils-2.5-29.el7_6.1.x86_64                    100/291[0m
+2019/02/21 12:54:24 ui: [0;32m    amazon-ebs: Installing : 1:grub2-tools-2.02-0.76.el7.centos.1.x86_64              101/291[0m
+2019/02/21 12:54:25 ui: [0;32m    amazon-ebs: Updating   : initscripts-9.49.46-1.el7.x86_64                         102/291[0m
+2019/02/21 12:54:25 ui: [0;32m    amazon-ebs: Installing : 1:grub2-tools-extra-2.02-0.76.el7.centos.1.x86_64        103/291[0m
+2019/02/21 12:54:25 ui: [0;32m    amazon-ebs: Updating   : 1:grub2-pc-2.02-0.76.el7.centos.1.x86_64                 104/291[0m
+2019/02/21 12:54:34 ui: [0;32m    amazon-ebs: Updating   : selinux-policy-3.13.1-229.el7_6.9.noarch                 105/291[0m
+2019/02/21 12:54:35 ui: [0;32m    amazon-ebs: Updating   : rpcbind-0.2.0-47.el7.x86_64                              106/291[0m
+2019/02/21 12:54:35 ui: [0;32m    amazon-ebs: Updating   : polkit-0.112-18.el7.x86_64                               107/291[0m
+2019/02/21 12:54:35 ui: [0;32m    amazon-ebs: Updating   : cronie-anacron-1.4.11-20.el7_6.x86_64                    108/291[0m
+2019/02/21 12:54:35 ui: [0;32m    amazon-ebs: Updating   : cronie-1.4.11-20.el7_6.x86_64                            109/291[0m
+2019/02/21 12:54:35 ui: [0;32m    amazon-ebs: Updating   : libcgroup-0.41-20.el7.x86_64                             110/291[0m
+2019/02/21 12:54:35 ui: [0;32m    amazon-ebs: Updating   : net-tools-2.0-0.24.20131004git.el7.x86_64                111/291[0m
+2019/02/21 12:54:36 ui: [0;32m    amazon-ebs: Updating   : gssproxy-0.7.0-21.el7.x86_64                             112/291[0m
+2019/02/21 12:54:36 ui: [0;32m    amazon-ebs: Updating   : dracut-network-033-554.el7.x86_64                        113/291[0m
+2019/02/21 12:54:36 ui: [0;32m    amazon-ebs: Updating   : checkpolicy-2.5-8.el7.x86_64                             114/291[0m
+2019/02/21 12:54:36 ui: [0;32m    amazon-ebs: Updating   : policycoreutils-python-2.5-29.el7_6.1.x86_64             115/291[0m
+2019/02/21 12:54:37 ui: [0;32m    amazon-ebs: Updating   : kernel-tools-libs-3.10.0-957.5.1.el7.x86_64              116/291[0m
+2019/02/21 12:54:37 ui: [0;32m    amazon-ebs: Updating   : kbd-misc-1.15.5-15.el7.noarch                            117/291[0m
+2019/02/21 12:54:37 ui: [0;32m    amazon-ebs: Updating   : kbd-1.15.5-15.el7.x86_64                                 118/291[0m
+2019/02/21 12:54:37 ui: [0;32m    amazon-ebs: Updating   : kernel-tools-3.10.0-957.5.1.el7.x86_64                   119/291[0m
+2019/02/21 12:54:38 ui: [0;32m    amazon-ebs: Updating   : cloud-init-18.2-1.el7.centos.1.x86_64                    120/291[0m
+2019/02/21 12:54:38 ui: [0;32m    amazon-ebs: Updating   : kexec-tools-2.0.15-21.el7.x86_64                         121/291[0m
+2019/02/21 12:54:38 ui: [0;32m    amazon-ebs: Updating   : 1:nfs-utils-1.3.0-0.61.el7.x86_64                        122/291[0m
+2019/02/21 12:54:40 ui: [0;32m    amazon-ebs: Updating   : tuned-2.10.0-6.el7.noarch                                123/291[0m
+2019/02/21 12:54:52 ui: [0;32m    amazon-ebs: Updating   : selinux-policy-targeted-3.13.1-229.el7_6.9.noarch        124/291[0m
+2019/02/21 12:54:56 ui: [0;32m    amazon-ebs: Installing : 1:grub2-2.02-0.76.el7.centos.1.x86_64                    125/291[0m
+2019/02/21 12:54:56 ui: [0;32m    amazon-ebs: Installing : kernel-3.10.0-957.5.1.el7.x86_64                         126/291[0m
+2019/02/21 12:54:56 ui: [0;32m    amazon-ebs: Updating   : audit-2.8.4-4.el7.x86_64                                 127/291[0m
+2019/02/21 12:54:57 ui: [0;32m    amazon-ebs: Updating   : 1:wpa_supplicant-2.6-12.el7.x86_64                       128/291[0m
+2019/02/21 12:54:58 ui: [0;32m    amazon-ebs: Updating   : 2:postfix-2.10.1-7.el7.x86_64                            129/291[0m
+2019/02/21 12:55:00 ui: [0;32m    amazon-ebs: Updating   : 2:microcode_ctl-2.1-47.el7.x86_64                        130/291[0m
+2019/02/21 12:55:00 ui: [0;32m    amazon-ebs: Updating   : rsyslog-8.24.0-34.el7.x86_64                             131/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : hwdata-0.252-9.1.el7.x86_64                              132/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : 10:qemu-guest-agent-2.12.0-2.el7.x86_64                  133/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : teamd-1.27-5.el7.x86_64                                  134/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : dracut-config-generic-033-554.el7.x86_64                 135/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : dracut-config-rescue-033-554.el7.x86_64                  136/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : sg3_utils-1.37-17.el7.x86_64                             137/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : sudo-1.8.23-3.el7.x86_64                                 138/291[0m
+2019/02/21 12:55:01 ui: [0;32m    amazon-ebs: Updating   : 32:bind-libs-lite-9.9.4-73.el7_6.x86_64                  139/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : yum-utils-1.1.31-50.el7.noarch                           140/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : gobject-introspection-1.56.1-1.el7.x86_64                141/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : libcroco-0.6.12-4.el7.x86_64                             142/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : xfsprogs-4.5.0-18.el7.x86_64                             143/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : 1:openssl-1.0.2k-16.el7.x86_64                           144/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : man-db-2.6.3-11.el7.x86_64                               145/291[0m
+2019/02/21 12:55:02 ui: [0;32m    amazon-ebs: Updating   : libgomp-4.8.5-36.el7.x86_64                              146/291[0m
+2019/02/21 12:55:04 ui: [0;32m    amazon-ebs: Updating   : iptables-1.4.21-28.el7.x86_64                            147/291[0m
+2019/02/21 12:55:04 ui: [0;32m    amazon-ebs: Updating   : iwl7265-firmware-22.0.7.0-69.el7.noarch                  148/291[0m
+2019/02/21 12:55:04 ui: [0;32m    amazon-ebs: Cleanup    : cloud-init-0.7.9-24.el7.centos.x86_64                    149/291[0m
+2019/02/21 12:55:04 ui: [0;32m    amazon-ebs: Cleanup    : 1:nfs-utils-1.3.0-0.54.el7.x86_64                        150/291[0m
+2019/02/21 12:55:04 ui: [0;32m    amazon-ebs: Cleanup    : policycoreutils-python-2.5-22.el7.x86_64                 151/291[0m
+2019/02/21 12:55:04 ui: [0;32m    amazon-ebs: Cleanup    : gssproxy-0.7.0-17.el7.x86_64                             152/291[0m
+2019/02/21 12:55:05 ui: [0;32m    amazon-ebs: Cleanup    : kexec-tools-2.0.15-13.el7.x86_64                         153/291[0m
+2019/02/21 12:55:05 ui: [0;32m    amazon-ebs: Cleanup    : 2:postfix-2.10.1-6.el7.x86_64                            154/291[0m
+2019/02/21 12:55:05 ui: [0;32m    amazon-ebs: Cleanup    : rpcbind-0.2.0-44.el7.x86_64                              155/291[0m
+2019/02/21 12:55:05 ui: [0;32m    amazon-ebs: Cleanup    : 32:bind-libs-lite-9.9.4-61.el7.x86_64                    156/291[0m
+2019/02/21 12:55:05 ui: [0;32m    amazon-ebs: Cleanup    : 1:openssl-1.0.2k-12.el7.x86_64                           157/291[0m
+2019/02/21 12:55:06 ui: [0;32m    amazon-ebs: Cleanup    : rsyslog-8.24.0-16.el7_5.4.x86_64                         158/291[0m
+2019/02/21 12:55:06 ui: [0;32m    amazon-ebs: Cleanup    : tuned-2.9.0-1.el7.noarch                                 159/291[0m
+2019/02/21 12:55:06 ui: [0;32m    amazon-ebs: Cleanup    : polkit-0.112-14.el7.x86_64                               160/291[0m
+2019/02/21 12:55:06 ui: [0;32m    amazon-ebs: Cleanup    : sudo-1.8.19p2-13.el7.x86_64                              161/291[0m
+2019/02/21 12:55:06 ui: [0;32m    amazon-ebs: Cleanup    : 1:wpa_supplicant-2.6-9.el7.x86_64                        162/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : audit-2.8.1-3.el7.x86_64                                 163/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : e2fsprogs-1.42.9-12.el7_5.x86_64                         164/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : cronie-anacron-1.4.11-19.el7.x86_64                      165/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : cronie-1.4.11-19.el7.x86_64                              166/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : 10:qemu-guest-agent-2.8.0-2.el7.x86_64                   167/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : 1:mariadb-libs-5.5.56-2.el7.x86_64                       168/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : libini_config-1.3.1-29.el7.x86_64                        169/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : setools-libs-3.3.8-2.el7.x86_64                          170/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : sg3_utils-1.37-12.el7.x86_64                             171/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : xfsprogs-4.5.0-15.el7.x86_64                             172/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : logrotate-3.8.6-15.el7.x86_64                            173/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : libsemanage-python-2.5-11.el7.x86_64                     174/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : net-tools-2.0-0.22.20131004git.el7.x86_64                175/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : man-db-2.6.3-9.el7.x86_64                                176/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : kbd-1.15.5-13.el7.x86_64                                 177/291[0m
+2019/02/21 12:55:08 ui: [0;32m    amazon-ebs: Cleanup    : initscripts-9.49.41-1.el7.x86_64                         178/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : gobject-introspection-1.50.0-1.el7.x86_64                179/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : kernel-tools-3.10.0-862.3.2.el7.x86_64                   180/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : teamd-1.27-4.el7.x86_64                                  181/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : selinux-policy-targeted-3.13.1-192.el7_5.3.noarch        182/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : selinux-policy-3.13.1-192.el7_5.3.noarch                 183/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : policycoreutils-2.5-22.el7.x86_64                        184/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libselinux-utils-2.5-12.el7.x86_64                       185/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : python-perf-3.10.0-862.3.2.el7.x86_64                    186/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libtirpc-0.2.4-0.10.el7.x86_64                           187/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : audit-libs-python-2.8.1-3.el7.x86_64                     188/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libcgroup-0.41-15.el7.x86_64                             189/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libselinux-python-2.5-12.el7.x86_64                      190/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : grubby-8.28-23.el7.x86_64                                191/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libstdc++-4.8.5-28.el7_5.1.x86_64                        192/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : e2fsprogs-libs-1.42.9-12.el7_5.x86_64                    193/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libss-1.42.9-12.el7_5.x86_64                             194/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : 2:vim-minimal-7.4.160-4.el7.x86_64                       195/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : GeoIP-1.5.0-11.el7.x86_64                                196/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : libcroco-0.6.11-1.el7.x86_64                             197/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : glib2-2.54.2-2.el7.x86_64                                198/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : 2:microcode_ctl-2.1-29.2.el7_5.x86_64                    199/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : systemd-sysv-219-57.el7.x86_64                           200/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : dracut-network-033-535.el7.x86_64                        201/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : dracut-config-rescue-033-535.el7.x86_64                  202/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-2.02-0.65.el7.centos.2.x86_64                    203/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-pc-2.02-0.65.el7.centos.2.x86_64                 204/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : yum-utils-1.1.31-45.el7.noarch                           205/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : yum-plugin-fastestmirror-1.1.31-45.el7.noarch            206/291[0m
+2019/02/21 12:55:09 ui: [0;32m    amazon-ebs: Cleanup    : yum-3.4.3-158.el7.centos.noarch                          207/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : hwdata-0.252-8.8.el7.x86_64                              208/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : rpm-python-4.11.3-32.el7.x86_64                          209/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : rpm-build-libs-4.11.3-32.el7.x86_64                      210/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-tools-extra-2.02-0.65.el7.centos.2.x86_64        211/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-tools-2.02-0.65.el7.centos.2.x86_64              212/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : gnupg2-2.0.22-4.el7.x86_64                               213/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : file-5.11-33.el7.x86_64                                  214/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-tools-minimal-2.02-0.65.el7.centos.2.x86_64      215/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : file-libs-5.11-33.el7.x86_64                             216/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : freetype-2.4.11-15.el7.x86_64                            217/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : iptables-1.4.21-24.1.el7_5.x86_64                        218/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : libgomp-4.8.5-28.el7_5.1.x86_64                          219/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : python-urlgrabber-3.10-8.el7.noarch                      220/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-pc-modules-2.02-0.65.el7.centos.2.noarch         221/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : python-linux-procfs-0.4.9-3.el7.noarch                   222/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : dracut-config-generic-033-535.el7.x86_64                 223/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 1:grub2-common-2.02-0.65.el7.centos.2.noarch             224/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : kbd-legacy-1.15.5-13.el7.noarch                          225/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : kbd-misc-1.15.5-13.el7.noarch                            226/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 32:bind-license-9.9.4-61.el7.noarch                      227/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : iwl7265-firmware-22.0.7.0-62.1.el7_5.noarch              228/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 1:dbus-libs-1.10.24-7.el7.x86_64                         229/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : procps-ng-3.3.10-17.el7_5.2.x86_64                       230/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : util-linux-2.23.2-52.el7.x86_64                          231/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : kpartx-0.4.9-119.el7.x86_64                              232/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : cryptsetup-libs-1.7.4-4.el7.x86_64                       233/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : systemd-libs-219-57.el7.x86_64                           234/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : kmod-20-21.el7.x86_64                                    235/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : dracut-033-535.el7.x86_64                                236/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 7:device-mapper-libs-1.02.146-4.el7.x86_64               237/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : 7:device-mapper-1.02.146-4.el7.x86_64                    238/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : elfutils-libs-0.170-4.el7.x86_64                         239/291[0m
+2019/02/21 12:55:10 ui: [0;32m    amazon-ebs: Cleanup    : elfutils-default-yama-scope-0.170-4.el7.noarch           240/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : 1:dbus-1.10.24-7.el7.x86_64                              241/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : systemd-219-57.el7.x86_64                                242/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : curl-7.29.0-46.el7.x86_64                                243/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libcurl-7.29.0-46.el7.x86_64                             244/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : openldap-2.4.44-15.el7_5.x86_64                          245/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : rpm-libs-4.11.3-32.el7.x86_64                            246/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : rpm-4.11.3-32.el7.x86_64                                 247/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : nss-tools-3.36.0-5.el7_5.x86_64                          248/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : nss-pem-1.0.3-4.el7.x86_64                               249/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : nss-sysinit-3.36.0-5.el7_5.x86_64                        250/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : nss-3.36.0-5.el7_5.x86_64                                251/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : 2:shadow-utils-4.1.5.1-24.el7.x86_64                     252/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libsemanage-2.5-11.el7.x86_64                            253/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libmount-2.23.2-52.el7.x86_64                            254/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libblkid-2.23.2-52.el7.x86_64                            255/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : binutils-2.27-27.base.el7.x86_64                         256/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : python-2.7.5-68.el7.x86_64                               257/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : python-libs-2.7.5-68.el7.x86_64                          258/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : 1:findutils-4.5.11-5.el7.x86_64                          259/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libssh2-1.4.3-10.el7_2.1.x86_64                          260/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : kmod-libs-20-21.el7.x86_64                               261/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : 2:tar-1.26-34.el7.x86_64                                 262/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : elfutils-libelf-0.170-4.el7.x86_64                       263/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : setup-2.8.71-9.el7.noarch                                264/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : centos-release-7-5.1804.el7.centos.2.x86_64              265/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : coreutils-8.22-21.el7.x86_64                             266/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : krb5-libs-1.15.1-19.el7.x86_64                           267/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : 1:openssl-libs-1.0.2k-12.el7.x86_64                      268/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libcom_err-1.42.9-12.el7_5.x86_64                        269/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : zlib-1.2.7-17.el7.x86_64                                 270/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : libuuid-2.23.2-52.el7.x86_64                             271/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : audit-libs-2.8.1-3.el7.x86_64                            272/291[0m
+2019/02/21 12:55:11 ui: [0;32m    amazon-ebs: Cleanup    : nss-util-3.36.0-1.el7_5.x86_64                           273/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libteam-1.27-4.el7.x86_64                                274/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : kernel-tools-libs-3.10.0-862.3.2.el7.x86_64              275/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : sg3_utils-libs-1.37-12.el7.x86_64                        276/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libbasicobjects-0.1.1-29.el7.x86_64                      277/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libcollection-0.7.0-29.el7.x86_64                        278/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libpath_utils-0.2.1-29.el7.x86_64                        279/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libref_array-0.1.5-29.el7.x86_64                         280/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : 2:ethtool-4.8-7.el7.x86_64                               281/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libfastjson-0.99.4-2.el7.x86_64                          282/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : checkpolicy-2.5-6.el7.x86_64                             283/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : 1:dmidecode-3.0-5.el7.x86_64                             284/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : bash-4.2.46-30.el7.x86_64                                285/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libsepol-2.5-8.1.el7.x86_64                              286/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : libselinux-2.5-12.el7.x86_64                             287/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : glibc-common-2.17-222.el7.x86_64                         288/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : glibc-2.17-222.el7.x86_64                                289/291[0m
+2019/02/21 12:55:12 ui: [0;32m    amazon-ebs: Cleanup    : tzdata-2018e-3.el7.noarch                                290/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Cleanup    : libgcc-4.8.5-28.el7_5.1.x86_64                           291/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : python-2.7.5-76.el7.x86_64                                 1/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : audit-2.8.4-4.el7.x86_64                                   2/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : rpm-python-4.11.3-35.el7.x86_64                            3/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : GeoIP-1.5.0-13.el7.x86_64                                  4/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 2:libpng-1.5.13-7.el7_2.x86_64                             5/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : policycoreutils-2.5-29.el7_6.1.x86_64                      6/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libstdc++-4.8.5-36.el7.x86_64                              7/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : teamd-1.27-5.el7.x86_64                                    8/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libsmartcols-2.23.2-59.el7.x86_64                          9/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-common-2.02-0.76.el7.centos.1.noarch              10/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 7:device-mapper-libs-1.02.149-10.el7_6.3.x86_64           11/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libblkid-2.23.2-59.el7.x86_64                             12/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 2:microcode_ctl-2.1-47.el7.x86_64                         13/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : file-libs-5.11-35.el7.x86_64                              14/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : cronie-1.4.11-20.el7_6.x86_64                             15/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libselinux-python-2.5-14.1.el7.x86_64                     16/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : audit-libs-python-2.8.4-4.el7.x86_64                      17/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : coreutils-8.22-23.el7.x86_64                              18/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : file-5.11-35.el7.x86_64                                   19/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libgomp-4.8.5-36.el7.x86_64                               20/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : selinux-policy-3.13.1-229.el7_6.9.noarch                  21/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libsemanage-2.5-14.el7.x86_64                             22/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : selinux-policy-targeted-3.13.1-229.el7_6.9.noarch         23/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : logrotate-3.8.6-17.el7.x86_64                             24/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : cronie-anacron-1.4.11-20.el7_6.x86_64                     25/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                      26/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : systemd-libs-219-62.el7_6.5.x86_64                        27/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : e2fsprogs-libs-1.42.9-13.el7.x86_64                       28/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libgcc-4.8.5-36.el7.x86_64                                29/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libmount-2.23.2-59.el7.x86_64                             30/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-pc-2.02-0.76.el7.centos.1.x86_64                  31/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : rsyslog-8.24.0-34.el7.x86_64                              32/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : nss-3.36.0-7.1.el7_6.x86_64                               33/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libcgroup-0.41-20.el7.x86_64                              34/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : nss-tools-3.36.0-7.1.el7_6.x86_64                         35/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : bash-4.2.46-31.el7.x86_64                                 36/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : rpm-libs-4.11.3-35.el7.x86_64                             37/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 1:wpa_supplicant-2.6-12.el7.x86_64                        38/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libbasicobjects-0.1.1-32.el7.x86_64                       39/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : elfutils-libs-0.172-2.el7.x86_64                          40/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : kbd-misc-1.15.5-15.el7.noarch                             41/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libpath_utils-0.2.1-32.el7.x86_64                         42/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libuuid-2.23.2-59.el7.x86_64                              43/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : krb5-libs-1.15.1-37.el7_6.x86_64                          44/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : hwdata-0.252-9.1.el7.x86_64                               45/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : rpm-build-libs-4.11.3-35.el7.x86_64                       46/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : cryptsetup-libs-2.0.3-3.el7.x86_64                        47/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : elfutils-libelf-0.172-2.el7.x86_64                        48/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libtirpc-0.2.4-0.15.el7.x86_64                            49/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-tools-2.02-0.76.el7.centos.1.x86_64               50/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : nss-sysinit-3.36.0-7.1.el7_6.x86_64                       51/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : rpcbind-0.2.0-47.el7.x86_64                               52/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libref_array-0.1.5-32.el7.x86_64                          53/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : util-linux-2.23.2-59.el7.x86_64                           54/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : systemd-sysv-219-62.el7_6.5.x86_64                        55/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : cloud-init-18.2-1.el7.centos.1.x86_64                     56/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : glib2-2.56.1-2.el7.x86_64                                 57/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : python-linux-procfs-0.4.9-4.el7.noarch                    58/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : yum-utils-1.1.31-50.el7.noarch                            59/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : setup-2.8.71-10.el7.noarch                                60/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : centos-release-7-6.1810.2.el7.centos.x86_64               61/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libcom_err-1.42.9-13.el7.x86_64                           62/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : yum-3.4.3-161.el7.centos.noarch                           63/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : openldap-2.4.44-21.el7_6.x86_64                           64/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libselinux-2.5-14.1.el7.x86_64                            65/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : grubby-8.28-25.el7.x86_64                                 66/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libsepol-2.5-10.el7.x86_64                                67/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : kernel-tools-3.10.0-957.5.1.el7.x86_64                    68/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-2.02-0.76.el7.centos.1.x86_64                     69/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : libfastjson-0.99.4-3.el7.x86_64                           70/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : dracut-033-554.el7.x86_64                                 71/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : initscripts-9.49.46-1.el7.x86_64                          72/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : python-urlgrabber-3.10-9.el7.noarch                       73/291[0m
+2019/02/21 12:56:37 ui: [0;32m    amazon-ebs: Verifying  : sudo-1.8.23-3.el7.x86_64                                  74/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : gobject-introspection-1.56.1-1.el7.x86_64                 75/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcroco-0.6.12-4.el7.x86_64                              76/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : gnupg2-2.0.22-5.el7_5.x86_64                              77/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : binutils-2.27-34.base.el7.x86_64                          78/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : sg3_utils-1.37-17.el7.x86_64                              79/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:openssl-1.0.2k-16.el7.x86_64                            80/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : linux-firmware-20180911-69.git85c5d90.el7.noarch          81/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : tzdata-2018i-1.el7.noarch                                 82/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:dmidecode-3.1-2.el7.x86_64                              83/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kbd-legacy-1.15.5-15.el7.noarch                           84/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : systemd-219-62.el7_6.5.x86_64                             85/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : policycoreutils-python-2.5-29.el7_6.1.x86_64              86/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kmod-20-23.el7.x86_64                                     87/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : elfutils-default-yama-scope-0.172-2.el7.noarch            88/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libsemanage-python-2.5-14.el7.x86_64                      89/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kbd-1.15.5-15.el7.x86_64                                  90/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : python-perf-3.10.0-957.5.1.el7.x86_64                     91/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : dracut-config-generic-033-554.el7.x86_64                  92/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcurl-7.29.0-51.el7.x86_64                              93/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : python-libs-2.7.5-76.el7.x86_64                           94/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : iptables-1.4.21-28.el7.x86_64                             95/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:findutils-4.5.11-6.el7.x86_64                           96/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libselinux-utils-2.5-14.1.el7.x86_64                      97/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : glibc-common-2.17-260.el7_6.3.x86_64                      98/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-tools-minimal-2.02-0.76.el7.centos.1.x86_64       99/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : freetype-2.8-12.el7_6.1.x86_64                           100/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : tuned-2.10.0-6.el7.noarch                                101/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 7:device-mapper-1.02.149-10.el7_6.3.x86_64               102/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : zlib-1.2.7-18.el7.x86_64                                 103/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-tools-extra-2.02-0.76.el7.centos.1.x86_64        104/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:ethtool-4.8-9.el7.x86_64                               105/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kpartx-0.4.9-123.el7.x86_64                              106/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:dbus-libs-1.10.24-12.el7.x86_64                        107/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kexec-tools-2.0.15-21.el7.x86_64                         108/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 32:bind-license-9.9.4-73.el7_6.noarch                    109/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : sg3_utils-libs-1.37-17.el7.x86_64                        110/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:dbus-1.10.24-12.el7.x86_64                             111/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:tar-1.26-35.el7.x86_64                                 112/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libteam-1.27-5.el7.x86_64                                113/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : rpm-4.11.3-35.el7.x86_64                                 114/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : procps-ng-3.3.10-23.el7.x86_64                           115/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:openssl-libs-1.0.2k-16.el7.x86_64                      116/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : nss-util-3.36.0-1.1.el7_6.x86_64                         117/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:shadow-utils-4.1.5.1-25.el7.x86_64                     118/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : audit-libs-2.8.4-4.el7.x86_64                            119/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : xfsprogs-4.5.0-18.el7.x86_64                             120/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : iwl7265-firmware-22.0.7.0-69.el7.noarch                  121/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libss-1.42.9-13.el7.x86_64                               122/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : nss-pem-1.0.3-5.el7.x86_64                               123/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kmod-libs-20-23.el7.x86_64                               124/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kernel-3.10.0-957.5.1.el7.x86_64                         125/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libssh2-1.4.3-12.el7.x86_64                              126/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 32:bind-libs-lite-9.9.4-73.el7_6.x86_64                  127/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : yum-plugin-fastestmirror-1.1.31-50.el7.noarch            128/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : man-db-2.6.3-11.el7.x86_64                               129/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libini_config-1.3.1-32.el7.x86_64                        130/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : json-c-0.11-4.el7_0.x86_64                               131/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : net-tools-2.0-0.24.20131004git.el7.x86_64                132/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : dracut-network-033-554.el7.x86_64                        133/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:nfs-utils-1.3.0-0.61.el7.x86_64                        134/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : gssproxy-0.7.0-21.el7.x86_64                             135/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcollection-0.7.0-32.el7.x86_64                        136/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : checkpolicy-2.5-8.el7.x86_64                             137/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : e2fsprogs-1.42.9-13.el7.x86_64                           138/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : setools-libs-3.3.8-4.el7.x86_64                          139/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : polkit-0.112-18.el7.x86_64                               140/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : glibc-2.17-260.el7_6.3.x86_64                            141/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 10:qemu-guest-agent-2.12.0-2.el7.x86_64                  142/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-pc-modules-2.02-0.76.el7.centos.1.noarch         143/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : curl-7.29.0-51.el7.x86_64                                144/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:vim-minimal-7.4.160-5.el7.x86_64                       145/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : dracut-config-rescue-033-554.el7.x86_64                  146/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kernel-tools-libs-3.10.0-957.5.1.el7.x86_64              147/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:postfix-2.10.1-7.el7.x86_64                            148/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : python-libs-2.7.5-68.el7.x86_64                          149/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libsemanage-python-2.5-11.el7.x86_64                     150/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libselinux-python-2.5-12.el7.x86_64                      151/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : teamd-1.27-4.el7.x86_64                                  152/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : yum-utils-1.1.31-45.el7.noarch                           153/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kernel-tools-3.10.0-862.3.2.el7.x86_64                   154/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libbasicobjects-0.1.1-29.el7.x86_64                      155/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : yum-3.4.3-158.el7.centos.noarch                          156/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : file-5.11-33.el7.x86_64                                  157/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : polkit-0.112-14.el7.x86_64                               158/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libref_array-0.1.5-29.el7.x86_64                         159/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kexec-tools-2.0.15-13.el7.x86_64                         160/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libgomp-4.8.5-28.el7_5.1.x86_64                          161/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcom_err-1.42.9-12.el7_5.x86_64                        162/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : policycoreutils-python-2.5-22.el7.x86_64                 163/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : sg3_utils-libs-1.37-12.el7.x86_64                        164/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kbd-legacy-1.15.5-13.el7.noarch                          165/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : rpcbind-0.2.0-44.el7.x86_64                              166/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : file-libs-5.11-33.el7.x86_64                             167/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : grubby-8.28-23.el7.x86_64                                168/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : dracut-033-535.el7.x86_64                                169/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : gobject-introspection-1.50.0-1.el7.x86_64                170/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : curl-7.29.0-46.el7.x86_64                                171/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : util-linux-2.23.2-52.el7.x86_64                          172/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : systemd-sysv-219-57.el7.x86_64                           173/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : sg3_utils-1.37-12.el7.x86_64                             174/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : iptables-1.4.21-24.1.el7_5.x86_64                        175/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : logrotate-3.8.6-15.el7.x86_64                            176/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : dracut-network-033-535.el7.x86_64                        177/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : python-perf-3.10.0-862.3.2.el7.x86_64                    178/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-tools-extra-2.02-0.65.el7.centos.2.x86_64        179/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : cloud-init-0.7.9-24.el7.centos.x86_64                    180/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 7:device-mapper-1.02.146-4.el7.x86_64                    181/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : kbd-misc-1.15.5-13.el7.noarch                            182/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : rpm-python-4.11.3-32.el7.x86_64                          183/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : cronie-anacron-1.4.11-19.el7.x86_64                      184/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 32:bind-libs-lite-9.9.4-61.el7.x86_64                    185/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:openssl-1.0.2k-12.el7.x86_64                           186/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : openldap-2.4.44-15.el7_5.x86_64                          187/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : gnupg2-2.0.22-4.el7.x86_64                               188/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 7:device-mapper-libs-1.02.146-4.el7.x86_64               189/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : dracut-config-generic-033-535.el7.x86_64                 190/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : sudo-1.8.19p2-13.el7.x86_64                              191/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : setup-2.8.71-9.el7.noarch                                192/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libtirpc-0.2.4-0.10.el7.x86_64                           193/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : net-tools-2.0-0.22.20131004git.el7.x86_64                194/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:dbus-libs-1.10.24-7.el7.x86_64                         195/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcollection-0.7.0-29.el7.x86_64                        196/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:openssl-libs-1.0.2k-12.el7.x86_64                      197/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:ethtool-4.8-7.el7.x86_64                               198/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : binutils-2.27-27.base.el7.x86_64                         199/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : elfutils-default-yama-scope-0.170-4.el7.noarch           200/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : tuned-2.9.0-1.el7.noarch                                 201/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : xfsprogs-4.5.0-15.el7.x86_64                             202/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 2:vim-minimal-7.4.160-4.el7.x86_64                       203/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : python-linux-procfs-0.4.9-3.el7.noarch                   204/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:nfs-utils-1.3.0-0.54.el7.x86_64                        205/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : 1:dmidecode-3.0-5.el7.x86_64                             206/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : glibc-2.17-222.el7.x86_64                                207/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcurl-7.29.0-46.el7.x86_64                             208/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : e2fsprogs-1.42.9-12.el7_5.x86_64                         209/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libgcc-4.8.5-28.el7_5.1.x86_64                           210/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : audit-2.8.1-3.el7.x86_64                                 211/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : nss-pem-1.0.3-4.el7.x86_64                               212/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : rsyslog-8.24.0-16.el7_5.4.x86_64                         213/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : libcroco-0.6.11-1.el7.x86_64                             214/291[0m
+2019/02/21 12:56:38 ui: [0;32m    amazon-ebs: Verifying  : gssproxy-0.7.0-17.el7.x86_64                             215/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 2:shadow-utils-4.1.5.1-24.el7.x86_64                     216/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 32:bind-license-9.9.4-61.el7.noarch                      217/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : initscripts-9.49.41-1.el7.x86_64                         218/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : selinux-policy-3.13.1-192.el7_5.3.noarch                 219/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 10:qemu-guest-agent-2.8.0-2.el7.x86_64                   220/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-2.02-0.65.el7.centos.2.x86_64                    221/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : rpm-build-libs-4.11.3-32.el7.x86_64                      222/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libselinux-utils-2.5-12.el7.x86_64                       223/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : checkpolicy-2.5-6.el7.x86_64                             224/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libuuid-2.23.2-52.el7.x86_64                             225/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : rpm-4.11.3-32.el7.x86_64                                 226/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libsemanage-2.5-11.el7.x86_64                            227/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : tzdata-2018e-3.el7.noarch                                228/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libini_config-1.3.1-29.el7.x86_64                        229/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libmount-2.23.2-52.el7.x86_64                            230/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : coreutils-8.22-21.el7.x86_64                             231/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : audit-libs-2.8.1-3.el7.x86_64                            232/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : selinux-policy-targeted-3.13.1-192.el7_5.3.noarch        233/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : policycoreutils-2.5-22.el7.x86_64                        234/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-common-2.02-0.65.el7.centos.2.noarch             235/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libsepol-2.5-8.1.el7.x86_64                              236/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-pc-modules-2.02-0.65.el7.centos.2.noarch         237/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : python-urlgrabber-3.10-8.el7.noarch                      238/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libpath_utils-0.2.1-29.el7.x86_64                        239/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libss-1.42.9-12.el7_5.x86_64                             240/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : kmod-20-21.el7.x86_64                                    241/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : elfutils-libs-0.170-4.el7.x86_64                         242/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : e2fsprogs-libs-1.42.9-12.el7_5.x86_64                    243/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : bash-4.2.46-30.el7.x86_64                                244/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:findutils-4.5.11-5.el7.x86_64                          245/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libssh2-1.4.3-10.el7_2.1.x86_64                          246/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : audit-libs-python-2.8.1-3.el7.x86_64                     247/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : glibc-common-2.17-222.el7.x86_64                         248/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : python-2.7.5-68.el7.x86_64                               249/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : procps-ng-3.3.10-17.el7_5.2.x86_64                       250/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-pc-2.02-0.65.el7.centos.2.x86_64                 251/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-tools-2.02-0.65.el7.centos.2.x86_64              252/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : dracut-config-rescue-033-535.el7.x86_64                  253/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : yum-plugin-fastestmirror-1.1.31-45.el7.noarch            254/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libselinux-2.5-12.el7.x86_64                             255/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libfastjson-0.99.4-2.el7.x86_64                          256/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:grub2-tools-minimal-2.02-0.65.el7.centos.2.x86_64      257/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : glib2-2.54.2-2.el7.x86_64                                258/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : nss-3.36.0-5.el7_5.x86_64                                259/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : elfutils-libelf-0.170-4.el7.x86_64                       260/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 2:microcode_ctl-2.1-29.2.el7_5.x86_64                    261/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : nss-tools-3.36.0-5.el7_5.x86_64                          262/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libcgroup-0.41-15.el7.x86_64                             263/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:wpa_supplicant-2.6-9.el7.x86_64                        264/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 2:postfix-2.10.1-6.el7.x86_64                            265/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libblkid-2.23.2-52.el7.x86_64                            266/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : freetype-2.4.11-15.el7.x86_64                            267/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : setools-libs-3.3.8-2.el7.x86_64                          268/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:dbus-1.10.24-7.el7.x86_64                              269/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : kpartx-0.4.9-119.el7.x86_64                              270/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : nss-sysinit-3.36.0-5.el7_5.x86_64                        271/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : zlib-1.2.7-17.el7.x86_64                                 272/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : man-db-2.6.3-9.el7.x86_64                                273/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : kbd-1.15.5-13.el7.x86_64                                 274/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : cryptsetup-libs-1.7.4-4.el7.x86_64                       275/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : centos-release-7-5.1804.el7.centos.2.x86_64              276/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : kmod-libs-20-21.el7.x86_64                               277/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : iwl7265-firmware-22.0.7.0-62.1.el7_5.noarch              278/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : systemd-219-57.el7.x86_64                                279/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : krb5-libs-1.15.1-19.el7.x86_64                           280/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : kernel-tools-libs-3.10.0-862.3.2.el7.x86_64              281/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : hwdata-0.252-8.8.el7.x86_64                              282/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libteam-1.27-4.el7.x86_64                                283/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : cronie-1.4.11-19.el7.x86_64                              284/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : systemd-libs-219-57.el7.x86_64                           285/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : GeoIP-1.5.0-11.el7.x86_64                                286/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 2:tar-1.26-34.el7.x86_64                                 287/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : 1:mariadb-libs-5.5.56-2.el7.x86_64                       288/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : nss-util-3.36.0-1.el7_5.x86_64                           289/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : rpm-libs-4.11.3-32.el7.x86_64                            290/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Verifying  : libstdc++-4.8.5-28.el7_5.1.x86_64                        291/291[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Installed:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2.x86_64 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-tools.x86_64 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-tools-extra.x86_64 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-tools-minimal.x86_64 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kernel.x86_64 0:3.10.0-957.5.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Dependency Installed:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: json-c.x86_64 0:0.11-4.el7_0[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libpng.x86_64 2:1.5.13-7.el7_2[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libsmartcols.x86_64 0:2.23.2-59.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: linux-firmware.noarch 0:20180911-69.git85c5d90.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Updated:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: GeoIP.x86_64 0:1.5.0-13.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: audit.x86_64 0:2.8.4-4.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: audit-libs.x86_64 0:2.8.4-4.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: audit-libs-python.x86_64 0:2.8.4-4.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: bash.x86_64 0:4.2.46-31.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: bind-libs-lite.x86_64 32:9.9.4-73.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: bind-license.noarch 32:9.9.4-73.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: binutils.x86_64 0:2.27-34.base.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: centos-release.x86_64 0:7-6.1810.2.el7.centos[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: checkpolicy.x86_64 0:2.5-8.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: cloud-init.x86_64 0:18.2-1.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: coreutils.x86_64 0:8.22-23.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: cronie.x86_64 0:1.4.11-20.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: cronie-anacron.x86_64 0:1.4.11-20.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: cryptsetup-libs.x86_64 0:2.0.3-3.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: curl.x86_64 0:7.29.0-51.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dbus.x86_64 1:1.10.24-12.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dbus-libs.x86_64 1:1.10.24-12.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: device-mapper.x86_64 7:1.02.149-10.el7_6.3[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: device-mapper-libs.x86_64 7:1.02.149-10.el7_6.3[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dmidecode.x86_64 1:3.1-2.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dracut.x86_64 0:033-554.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dracut-config-generic.x86_64 0:033-554.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dracut-config-rescue.x86_64 0:033-554.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: dracut-network.x86_64 0:033-554.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: e2fsprogs.x86_64 0:1.42.9-13.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: e2fsprogs-libs.x86_64 0:1.42.9-13.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: elfutils-default-yama-scope.noarch 0:0.172-2.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: elfutils-libelf.x86_64 0:0.172-2.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: elfutils-libs.x86_64 0:0.172-2.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: ethtool.x86_64 2:4.8-9.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: file.x86_64 0:5.11-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: file-libs.x86_64 0:5.11-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: findutils.x86_64 1:4.5.11-6.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: freetype.x86_64 0:2.8-12.el7_6.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: glib2.x86_64 0:2.56.1-2.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: glibc.x86_64 0:2.17-260.el7_6.3[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: glibc-common.x86_64 0:2.17-260.el7_6.3[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: gnupg2.x86_64 0:2.0.22-5.el7_5[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: gobject-introspection.x86_64 0:1.56.1-1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-common.noarch 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-pc.x86_64 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-pc-modules.noarch 1:2.02-0.76.el7.centos.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grubby.x86_64 0:8.28-25.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: gssproxy.x86_64 0:0.7.0-21.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: hwdata.x86_64 0:0.252-9.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: initscripts.x86_64 0:9.49.46-1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: iptables.x86_64 0:1.4.21-28.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: iwl7265-firmware.noarch 0:22.0.7.0-69.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kbd.x86_64 0:1.15.5-15.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kbd-legacy.noarch 0:1.15.5-15.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kbd-misc.noarch 0:1.15.5-15.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kernel-tools.x86_64 0:3.10.0-957.5.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kernel-tools-libs.x86_64 0:3.10.0-957.5.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kexec-tools.x86_64 0:2.0.15-21.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kmod.x86_64 0:20-23.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kmod-libs.x86_64 0:20-23.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: kpartx.x86_64 0:0.4.9-123.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: krb5-libs.x86_64 0:1.15.1-37.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libbasicobjects.x86_64 0:0.1.1-32.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libblkid.x86_64 0:2.23.2-59.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libcgroup.x86_64 0:0.41-20.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libcollection.x86_64 0:0.7.0-32.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libcom_err.x86_64 0:1.42.9-13.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libcroco.x86_64 0:0.6.12-4.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libcurl.x86_64 0:7.29.0-51.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libfastjson.x86_64 0:0.99.4-3.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libgcc.x86_64 0:4.8.5-36.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libgomp.x86_64 0:4.8.5-36.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libini_config.x86_64 0:1.3.1-32.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libmount.x86_64 0:2.23.2-59.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libpath_utils.x86_64 0:0.2.1-32.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libref_array.x86_64 0:0.1.5-32.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libselinux.x86_64 0:2.5-14.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libselinux-python.x86_64 0:2.5-14.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libselinux-utils.x86_64 0:2.5-14.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libsemanage.x86_64 0:2.5-14.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libsemanage-python.x86_64 0:2.5-14.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libsepol.x86_64 0:2.5-10.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libss.x86_64 0:1.42.9-13.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libssh2.x86_64 0:1.4.3-12.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libstdc++.x86_64 0:4.8.5-36.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libteam.x86_64 0:1.27-5.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libtirpc.x86_64 0:0.2.4-0.15.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: libuuid.x86_64 0:2.23.2-59.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: logrotate.x86_64 0:3.8.6-17.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: man-db.x86_64 0:2.6.3-11.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: mariadb-libs.x86_64 1:5.5.60-1.el7_5[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: microcode_ctl.x86_64 2:2.1-47.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: net-tools.x86_64 0:2.0-0.24.20131004git.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: nfs-utils.x86_64 1:1.3.0-0.61.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: nss.x86_64 0:3.36.0-7.1.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: nss-pem.x86_64 0:1.0.3-5.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: nss-sysinit.x86_64 0:3.36.0-7.1.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: nss-tools.x86_64 0:3.36.0-7.1.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: nss-util.x86_64 0:3.36.0-1.1.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: openldap.x86_64 0:2.4.44-21.el7_6[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: openssl.x86_64 1:1.0.2k-16.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: openssl-libs.x86_64 1:1.0.2k-16.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: policycoreutils.x86_64 0:2.5-29.el7_6.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: policycoreutils-python.x86_64 0:2.5-29.el7_6.1[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: polkit.x86_64 0:0.112-18.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: postfix.x86_64 2:2.10.1-7.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: procps-ng.x86_64 0:3.3.10-23.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: python.x86_64 0:2.7.5-76.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: python-libs.x86_64 0:2.7.5-76.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: python-linux-procfs.noarch 0:0.4.9-4.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: python-perf.x86_64 0:3.10.0-957.5.1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: python-urlgrabber.noarch 0:3.10-9.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: qemu-guest-agent.x86_64 10:2.12.0-2.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: rpcbind.x86_64 0:0.2.0-47.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: rpm.x86_64 0:4.11.3-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: rpm-build-libs.x86_64 0:4.11.3-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: rpm-libs.x86_64 0:4.11.3-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: rpm-python.x86_64 0:4.11.3-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: rsyslog.x86_64 0:8.24.0-34.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: selinux-policy.noarch 0:3.13.1-229.el7_6.9[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.9[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: setools-libs.x86_64 0:3.3.8-4.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: setup.noarch 0:2.8.71-10.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: sg3_utils.x86_64 0:1.37-17.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: sg3_utils-libs.x86_64 0:1.37-17.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: shadow-utils.x86_64 2:4.1.5.1-25.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: sudo.x86_64 0:1.8.23-3.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: systemd.x86_64 0:219-62.el7_6.5[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: systemd-libs.x86_64 0:219-62.el7_6.5[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: systemd-sysv.x86_64 0:219-62.el7_6.5[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: tar.x86_64 2:1.26-35.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: teamd.x86_64 0:1.27-5.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: tuned.noarch 0:2.10.0-6.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: tzdata.noarch 0:2018i-1.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: util-linux.x86_64 0:2.23.2-59.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: vim-minimal.x86_64 2:7.4.160-5.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: wpa_supplicant.x86_64 1:2.6-12.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: xfsprogs.x86_64 0:4.5.0-18.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: yum.noarch 0:3.4.3-161.el7.centos[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: yum-plugin-fastestmirror.noarch 0:1.1.31-50.el7[0m
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 [INFO] RPC endpoint: Communicator ended with: 0
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: yum-utils.noarch 0:1.1.31-50.el7[0m
+2019/02/21 12:56:39 [INFO] 431 bytes written for 'stderr'
+2019/02/21 12:56:39 [INFO] 92666 bytes written for 'stdout'
+2019/02/21 12:56:39 [INFO] RPC client: Communicator ended with: 0
+2019/02/21 12:56:39 [INFO] RPC endpoint: Communicator ended with: 0
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 [INFO] 431 bytes written for 'stderr'
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: zlib.x86_64 0:1.2.7-18.el7[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Replaced:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2.x86_64 1:2.02-0.65.el7.centos.2[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: grub2-tools.x86_64 1:2.02-0.65.el7.centos.2[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs:[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Complete![0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Loaded plugins: fastestmirror[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Loading mirror speeds from cached hostfile[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: * base: repos-va.psychz.net[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: * extras: mirror.jaleco.com[0m
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 [INFO] 92666 bytes written for 'stdout'
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 [INFO] RPC client: Communicator ended with: 0
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: * updates: repos-va.psychz.net[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Package curl-7.29.0-51.el7.x86_64 already installed and latest version[0m
+2019/02/21 12:56:39 ui: [0;32m    amazon-ebs: Nothing to do[0m
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 opening new ssh session
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 starting remote command: rm -f /tmp/script_7687.sh
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 [INFO] RPC endpoint: Communicator ended with: 0
+2019/02/21 12:56:39 [INFO] RPC client: Communicator ended with: 0
+2019/02/21 12:56:39 [INFO] RPC endpoint: Communicator ended with: 0
+2019/02/21 12:56:39 packer: 2019/02/21 12:56:39 [INFO] RPC client: Communicator ended with: 0
+2019/02/21 12:56:39 [INFO] (telemetry) ending shell
+2019/02/21 12:56:39 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepProvision'. Press enter to continue.[0m
+2019/02/21 12:57:17 ui: [1;32m==> amazon-ebs: Stopping the source instance...[0m
+2019/02/21 12:57:17 ui: [0;32m    amazon-ebs: Stopping instance, attempt 1[0m
+2019/02/21 12:57:17 ui: [1;32m==> amazon-ebs: Waiting for the instance to stop...[0m
+2019/02/21 12:57:17 packer: 2019/02/21 12:57:17 Waiting for state to become: stopped
+2019/02/21 12:57:17 packer: 2019/02/21 12:57:17 Using 2s as polling delay (change with AWS_POLL_DELAY_SECONDS)
+2019/02/21 12:57:17 packer: 2019/02/21 12:57:17 Allowing 300s to complete (change with AWS_TIMEOUT_SECONDS)
+2019/02/21 12:58:14 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepStopEBSBackedInstance'. Press enter to continue.[0m
+2019/02/21 12:58:24 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepModifyEBSBackedInstance'. Press enter to continue.[0m
+2019/02/21 12:58:25 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepDeregisterAMI'. Press enter to continue.[0m
+2019/02/21 12:58:25 ui: [1;32m==> amazon-ebs: Creating the AMI: csye6225_1550771491[0m
+2019/02/21 12:58:25 ui: [0;32m    amazon-ebs: AMI: ami-0d63959d1ccca6dc7[0m
+2019/02/21 12:58:25 ui: [1;32m==> amazon-ebs: Waiting for AMI to become ready...[0m
+2019/02/21 12:58:25 packer: 2019/02/21 12:58:25 Waiting for state to become: available
+2019/02/21 12:58:25 packer: 2019/02/21 12:58:25 Using 2s as polling delay (change with AWS_POLL_DELAY_SECONDS)
+2019/02/21 12:58:25 packer: 2019/02/21 12:58:25 Allowing 300s to complete (change with AWS_TIMEOUT_SECONDS)
+2019/02/21 13:00:07 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'stepCreateAMI'. Press enter to continue.[0m
+2019/02/21 13:00:49 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepCreateEncryptedAMICopy'. Press enter to continue.[0m
+2019/02/21 13:00:50 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepAMIRegionCopy'. Press enter to continue.[0m
+2019/02/21 13:00:50 ui: [1;32m==> amazon-ebs: Modifying attributes on AMI (ami-0d63959d1ccca6dc7)...[0m
+2019/02/21 13:00:50 ui: [0;32m    amazon-ebs: Modifying: description[0m
+2019/02/21 13:00:50 ui: [1;32m==> amazon-ebs: Modifying attributes on snapshot (snap-0388573790b7e7cb7)...[0m
+2019/02/21 13:00:50 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepModifyAMIAttributes'. Press enter to continue.[0m
+2019/02/21 13:00:52 ui: ask: [1;32m==> amazon-ebs: Pausing after run of step 'StepCreateTags'. Press enter to continue.[0m
+2019/02/21 13:00:53 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepCreateTags'. Press enter to continue.[0m
+2019/02/21 13:00:54 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepModifyAMIAttributes'. Press enter to continue.[0m
+2019/02/21 13:00:54 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepAMIRegionCopy'. Press enter to continue.[0m
+2019/02/21 13:00:55 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepCreateEncryptedAMICopy'. Press enter to continue.[0m
+2019/02/21 13:00:55 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'stepCreateAMI'. Press enter to continue.[0m
+2019/02/21 13:00:56 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepDeregisterAMI'. Press enter to continue.[0m
+2019/02/21 13:00:57 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepModifyEBSBackedInstance'. Press enter to continue.[0m
+2019/02/21 13:00:57 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepStopEBSBackedInstance'. Press enter to continue.[0m
+2019/02/21 13:00:59 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepProvision'. Press enter to continue.[0m
+2019/02/21 13:00:59 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepConnect'. Press enter to continue.[0m
+2019/02/21 13:00:59 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepGetPassword'. Press enter to continue.[0m
+2019/02/21 13:01:00 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepTagEBSVolumes'. Press enter to continue.[0m
+2019/02/21 13:01:00 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepRunSourceInstance'. Press enter to continue.[0m
+2019/02/21 13:01:00 ui: [1;32m==> amazon-ebs: Terminating the source AWS instance...[0m
+2019/02/21 13:01:00 packer: 2019/02/21 13:01:00 Waiting for state to become: terminated
+2019/02/21 13:01:00 packer: 2019/02/21 13:01:00 Using 2s as polling delay (change with AWS_POLL_DELAY_SECONDS)
+2019/02/21 13:01:00 packer: 2019/02/21 13:01:00 Allowing 300s to complete (change with AWS_TIMEOUT_SECONDS)
+2019/02/21 13:01:07 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'stepCleanupVolumes'. Press enter to continue.[0m
+2019/02/21 13:01:07 ui: [1;32m==> amazon-ebs: Cleaning up any extra volumes...[0m
+2019/02/21 13:01:07 ui: [1;32m==> amazon-ebs: No volumes to clean up, skipping[0m
+2019/02/21 13:01:07 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepSecurityGroup'. Press enter to continue.[0m
+2019/02/21 13:01:07 ui: [1;32m==> amazon-ebs: Deleting temporary security group...[0m
+2019/02/21 13:01:07 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepKeyPair'. Press enter to continue.[0m
+2019/02/21 13:01:22 ui: [1;32m==> amazon-ebs: Deleting temporary keypair...[0m
+2019/02/21 13:01:22 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepSourceAMIInfo'. Press enter to continue.[0m
+2019/02/21 13:01:23 ui: ask: [1;32m==> amazon-ebs: Pausing before cleanup of step 'StepPreValidate'. Press enter to continue.[0m
+2019/02/21 13:01:25 [INFO] (telemetry) ending amazon-ebs
+2019/02/21 13:01:25 ui: [1;32mBuild 'amazon-ebs' finished.[0m
+2019/02/21 13:01:25 Waiting on builds to complete...
+2019/02/21 13:01:25 Builds completed. Waiting on interrupt barrier...
+2019/02/21 13:01:25 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2019/02/21 13:01:25 machine readable: amazon-ebs,artifact-count []string{"1"}
+2019/02/21 13:01:25 machine readable: amazon-ebs,artifact []string{"0", "builder-id", "mitchellh.amazonebs"}
+2019/02/21 13:01:25 machine readable: amazon-ebs,artifact []string{"0", "id", "us-east-1:ami-0d63959d1ccca6dc7"}
+2019/02/21 13:01:25 machine readable: amazon-ebs,artifact []string{"0", "string", "AMIs were created:\n\nus-east-1: ami-0d63959d1ccca6dc7"}
+2019/02/21 13:01:25 machine readable: amazon-ebs,artifact []string{"0", "files-count", "0"}
+2019/02/21 13:01:25 machine readable: amazon-ebs,artifact []string{"0", "end"}
+2019/02/21 13:01:25 ui: --> amazon-ebs: AMIs were created:
+
+us-east-1: ami-0d63959d1ccca6dc7
+2019/02/21 13:01:25 waiting for all plugin processes to complete...
+2019/02/21 13:01:25 /usr/bin/packer: plugin process exited
+2019/02/21 13:01:25 /usr/bin/packer: plugin process exited
