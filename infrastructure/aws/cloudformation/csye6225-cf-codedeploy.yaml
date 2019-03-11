@@ -1,0 +1,43 @@
+Resource:
+  CodeDeploy: 
+    Type: AWS::CodeDeploy::Application
+    Properties:
+      ApplicationName: csye6225-webapp
+      ComputePlatform: EC2/On-premises
+
+
+  CodeDeploymentGroup:
+    Type: AWS::CodeDeploy::DeploymentGroup
+    Properties:
+      AlarmConfiguration:
+        AlarmConfiguration
+      ApplicationName: String
+      AutoRollbackConfiguration:
+        Enabled: 'true'
+        Events:
+          - DEPLOYMENT_FAILURE
+
+      AutoScalingGroups:
+        - String
+      DeploymentConfigName: 
+      DeploymentGroupName: csye6225-webapp-deployment
+      DeploymentStyle:
+        DeploymentType: In-place
+      Ec2TagFilters:
+        - Key: !Ref EC2TagKey0
+          Value: !Ref EC2TagValue0
+          Type: KEY_AND_VALUE
+        - Key: !Ref EC2TagKey1
+          Type: KEY_ONLY
+        - Value: !Ref EC2TagValue1
+          Type: VALUE_ONLY
+      Ec2TagSet : Ec2TagSet
+      LoadBalancerInfo: 
+        LoadBalancerInfo
+      OnPremisesInstanceTagFilters:
+        - OnPremisesInstanceTagFilters
+      OnPremisesInstanceTagSet: OnPremisesInstanceTagSet
+      ServiceRoleArn: 
+        Fn::GetAtt: [ CodeDeployServiceRole, Arn ]
+      TriggerConfigurations:
+        - TriggerConfig 
