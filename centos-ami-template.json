@@ -26,9 +26,7 @@
         "FOO=foo"
       ],
       "inline": [
-        "sudo yum update -y",
         "sudo yum install curl",
-        "sudo yum update",
         "sudo yum install ruby",
         "sudo yum install wget",
         "cd /home/centos",
