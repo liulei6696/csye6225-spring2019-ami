@@ -15,7 +15,6 @@
       ],
       "region": "{{user `aws_region`}}",
       "source_ami": "{{user `source_ami`}}",
-      "subnet_id": "{{user `subnet_id`}}",
       "ssh_username": "{{user `ssh_username`}}",
       "type": "amazon-ebs"
     }
@@ -41,7 +40,6 @@
   "variables": {
     "aws_region": "",
     "source_ami": "ami-9887c6e7",
-    "subnet_id": "",
     "ssh_username": "centos"
   }
 }
