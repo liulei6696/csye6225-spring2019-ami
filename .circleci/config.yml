@@ -23,8 +23,7 @@ jobs:
       - run:
           name: Validate Packer Template
           command: 
-            cd infrastructure/aws/cloudformation
-            packer validate centos-ami-template.json
+            ./packer validate centos-ami-template.json
       - run:
           name: Build AMI
           command: |
