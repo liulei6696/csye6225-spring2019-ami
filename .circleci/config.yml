@@ -28,5 +28,4 @@ jobs:
       - run:
           name: Build AMI
           command: |
-            cd infrastructure/aws/cloudformation
-            ./packer build -var 'aws_region=${AWS_REGION}' centos-ami-template.json
+            ./packer build -var centos-ami-template.json
