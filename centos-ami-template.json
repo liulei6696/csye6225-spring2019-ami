@@ -15,6 +15,7 @@
       ],
       "region": "{{user `aws_region`}}",
       "source_ami": "{{user `source_ami`}}",
+      "subnet_id": "{{user `subnet_id`}}",
       "ssh_username": "{{user `ssh_username`}}",
       "type": "amazon-ebs"
     }
@@ -26,15 +27,21 @@
         "FOO=foo"
       ],
       "inline": [
-        "sudo yum update -y",
-        "sudo yum install curl"
+        "sudo yum install curl",
+        "sudo yum install ruby",
+        "sudo yum install wget",
+        "cd /home/centos",
+        "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
+        "chmod +x ./install",
+        "sudo ./install auto"
       ],
       "type": "shell"
     }
   ],
   "variables": {
-    "aws_region": "us-east-1",
+    "aws_region": "",
     "source_ami": "ami-9887c6e7",
+    "subnet_id": "",
     "ssh_username": "centos"
   }
 }
