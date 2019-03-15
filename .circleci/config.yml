@@ -24,10 +24,10 @@ jobs:
           name: Validate Packer Template
           command: 
             ./packer validate centos-ami-template.json
-      - run:
+      - run: 
           name: Build AMI
           command: |
             ./packer build \
             -var "aws_region=${AWS_DEFAULT_REGION}" \
-            -var "subnet_id=${SUBNET_ID}" \
+            -var "subnet_id=${NET_SUBNET_ID}" \
             centos-ami-template.json

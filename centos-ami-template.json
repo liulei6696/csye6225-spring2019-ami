@@ -15,7 +15,6 @@
       ],
       "region": "{{user `aws_region`}}",
       "source_ami": "{{user `source_ami`}}",
-      "subnet_id": "{{user `subnet_id`}}",
       "ssh_username": "{{user `ssh_username`}}",
       "type": "amazon-ebs"
     }
@@ -27,11 +26,13 @@
         "FOO=foo"
       ],
       "inline": [
-        "sudo yum install curl",
-        "sudo yum install ruby",
-        "sudo yum install wget",
+        "sudo yum update -y",
+        "sudo yum install ruby -y",
+        "sudo yum install wget -y",
+        "sudo yum install java-1.8.0-openjdk-devel -y",
         "cd /home/centos",
         "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
+        "",
         "chmod +x ./install",
         "sudo ./install auto"
       ],
@@ -41,7 +42,6 @@
   "variables": {
     "aws_region": "",
     "source_ami": "ami-9887c6e7",
-    "subnet_id": "",
     "ssh_username": "centos"
   }
 }
