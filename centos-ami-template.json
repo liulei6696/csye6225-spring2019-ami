@@ -29,8 +29,10 @@
         "sudo yum update -y",
         "sudo yum install ruby -y",
         "sudo yum install wget -y",
+        "sudo yum install java-1.8.0-openjdk-devel -y",
         "cd /home/centos",
         "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
+        "",
         "chmod +x ./install",
         "sudo ./install auto"
       ],
