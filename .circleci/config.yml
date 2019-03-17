@@ -3,7 +3,7 @@ jobs:
   build:
     branches:
       only:
-       - Assignment5
+       - assignment5
     docker:
       - image: circleci/python:2.7-jessie
     steps:
@@ -22,10 +22,12 @@ jobs:
             chmod +x packer
       - run:
           name: Validate Packer Template
-          command: ./packer validate centos-ami-template.json
-      - run:
+          command: 
+            ./packer validate centos-ami-template.json
+      - run: 
           name: Build AMI
           command: |
             ./packer build \
-            -var 'aws_region=${AWS_REGION}' \
+            -var "aws_region=${AWS_DEFAULT_REGION}" \
+            -var "subnet_id=${NET_SUBNET_ID}" \
             centos-ami-template.json
