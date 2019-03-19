@@ -38,6 +38,7 @@
         "sudo ln -s /opt/tomcat/apache-tomcat-9.0.17 /opt/tomcat/latest",
         "sudo rm -rf /opt/tomcat/latest/webapps/*",
         "sudo chown -R tomcat: /opt/tomcat",
+        "sudo chown -R centos: /opt/tomcat",
         "sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'",
         "cd /etc/systemd/system",
         "sudo touch tomcat.service",
