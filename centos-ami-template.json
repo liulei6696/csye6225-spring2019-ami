@@ -36,6 +36,7 @@
         "tar -xf apache-tomcat-9.0.16.tar.gz",
         "sudo mv apache-tomcat-9.0.16 /opt/tomcat/",
         "sudo ln -s /opt/tomcat/apache-tomcat-9.0.16 /opt/tomcat/latest",
+        "sudo rm -rf /opt/tomcat/latest/webapps/*",
         "sudo chown -R tomcat: /opt/tomcat",
         "sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'",
         "cd /etc/systemd/system",
