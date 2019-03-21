@@ -11,7 +11,7 @@
 ## Validate Template
 
 ```
-packer validate ubuntu-ami.json
+packer validate centos-ami.json
 ```
 
 ## Build AMI
@@ -19,7 +19,7 @@ packer validate ubuntu-ami.json
 ```
 export PACKER_LOG_PATH="./centos-ami.log"
 export PACKER_LOG=10
-packer build ubuntu_64.json
+packer build centos_64.json
 
 ```
 
