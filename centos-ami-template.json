@@ -69,10 +69,7 @@
         "chmod +x ./install",
         "sudo ./install auto",
         "wget https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm",
-        "sudo rpm -U ./amazon-cloudwatch-agent.rpm",
-        "sudo yum install -y awslogs",
-        "sudo systemctl start awslogsd",
-        "sudo systemctl enable awslogsd.service"
+        "sudo rpm -U ./amazon-cloudwatch-agent.rpm"
       ],
       "type": "shell"
     }
